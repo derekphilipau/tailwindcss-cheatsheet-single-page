@@ -10,58 +10,89 @@
 
         <h1 class="my-6">Tailwind Cheatsheet</h1>
 
+        <div class="text-sm">
+            <a class="text-blue" href="#flex-display">flex-display</a>,
+            <a class="text-blue" href="#flex-direction">flex-direction</a>,
+            <a class="text-blue" href="#font-size">font-size</a>,
+            <a class="text-blue" href="#font-family">font-family</a>,
+            <a class="text-blue" href="#font-weight">font-weight</a>,
+            <a class="text-blue" href="#letter-spacing">letter-spacing</a>,
+            <a class="text-blue" href="#line-height">line-height</a>,
+            <a class="text-blue" href="#font-style">font-style</a>,
+            <a class="text-blue" href="#text-transform">text-transform</a>,
+            <a class="text-blue" href="#text-decoration">text-decoration</a>,
+            <a class="text-blue" href="#text-align">text-align</a>,
+            <a class="text-blue" href="#background-color">background-color</a>,
+            <a class="text-blue" href="#background-color">border-color</a>,
+            <a class="text-blue" href="#background-color">color</a>
+            <a class="text-blue" href="#"></a>
+            <a class="text-blue" href="#"></a>
+            <a class="text-blue" href="#"></a>
+            <a class="text-blue" href="#"></a>
+            <a class="text-blue" href="#"></a>
+            <a class="text-blue" href="#"></a>
+        </div>
+
+
         <h2 class="my-6">Flexbox</h2>
 
-        <h3 class="my-6">flex display</h3>
+        <div class="flex">
+            <div class="flex-1 px-2">
 
-        <h5 class="my-2 font-mono">.flex</h5>
-        <div class="flex bg-grey-lighter">
-            <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
-            <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
-            <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
-        </div>
+                <h3 id="flex-display" class="my-6 text-blue">flex display</h3>
 
-        <h5 class="my-2 font-mono">.inline-flex</h5>
-        <div class="inline-flex bg-grey-lighter">
-            <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
-            <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
-            <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
-        </div>
+                <h5 class="my-2 font-mono text-grey-darker">.flex</h5>
+                <div class="flex bg-grey-lighter">
+                    <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
+                    <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
+                    <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
+                </div>
 
-        <h3 class="my-6">flex-direction</h3>
+                <h5 class="my-2 font-mono text-grey-dark">.inline-flex</h5>
+                <div class="inline-flex bg-grey-lighter">
+                    <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
+                    <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
+                    <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
+                </div>
 
-        <h5 class="my-2 font-mono">.flex-row</h5>
-        <div class="flex flex-row bg-grey-lighter">
-            <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">1</div>
-            <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">2</div>
-            <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div>
-        </div>
+                <h3 id="flex-direction" class="my-6 text-blue">flex-direction</h3>
 
-        <h5 class="my-2 font-mono">.flex-row-reverse</h5>
-        <div class="flex flex-row-reverse bg-grey-lighter">
-            <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">1</div>
-            <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">2</div>
-            <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div>
-        </div>
+                <h5 class="my-2 font-mono text-grey-dark">.flex-row</h5>
+                <div class="flex flex-row bg-grey-lighter">
+                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">1</div>
+                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">2</div>
+                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div>
+                </div>
 
-        <h5 class="my-2 font-mono">.flex-col</h5>
-        <div class="flex flex-col bg-grey-lighter">
-            <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">1</div>
-            <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">2</div>
-            <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div>
-        </div>
+                <h5 class="my-2 font-mono text-grey-dark">.flex-row-reverse</h5>
+                <div class="flex flex-row-reverse bg-grey-lighter">
+                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">1</div>
+                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">2</div>
+                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div>
+                </div>
 
-        <h5 class="my-2 font-mono">.flex-col-reverse</h5>
-        <div class="flex flex-col-reverse bg-grey-lighter">
-            <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">1</div>
-            <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">2</div>
-            <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div>
+                <h5 class="my-2 font-mono text-grey-dark">.flex-col</h5>
+                <div class="flex flex-col bg-grey-lighter">
+                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">1</div>
+                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">2</div>
+                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div>
+                </div>
+
+                <h5 class="my-2 font-mono text-grey-dark">.flex-col-reverse</h5>
+                <div class="flex flex-col-reverse bg-grey-lighter">
+                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">1</div>
+                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">2</div>
+                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div>
+                </div>
+            </div>
+            <div class="flex-1 px-2">
+            </div>
         </div>
 
 
         <h2 class="my-6">Typography</h2>
 
-        <h3 class="my-6">font-size</h3>
+        <h3 id="font-size" class="my-6 text-blue">font-size</h3>
 
         <table class="text-grey-dark w-full text-left table-collapse">
             <tbody class="whitespace-no-wrap">
@@ -107,7 +138,7 @@
 
         <div class="flex">
             <div class="flex-1 px-2">
-                <h3 class="my-6">font-family</h3>
+                <h3 id="font-family" class="my-6 text-blue">font-family</h3>
 
                 <table class="text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -130,7 +161,7 @@
                     </tbody>
                 </table>
 
-                <h3 class="my-6">font-weight</h3>
+                <h3 id="font-weight" class="my-6 text-blue">font-weight</h3>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -177,7 +208,7 @@
                     </tbody>
                 </table>
 
-                <h3 class="my-6">letter-spacing</h3>
+                <h3 id="letter-spacing" class="my-6 text-blue">letter-spacing</h3>
 
                 <table class="text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -200,7 +231,7 @@
                     </tbody>
                 </table>
 
-                <h3 class="my-6">line-height</h3>
+                <h3 id="line-height" class="my-6 text-blue">line-height</h3>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -228,7 +259,7 @@
                 </table>
             </div>
             <div class="flex-1 px-2">
-                <h3 class="my-6">font-style</h3>
+                <h3 id="font-style" class="my-6 text-blue">font-style</h3>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -247,7 +278,7 @@
                     </tbody>
                 </table>
 
-                <h3 class="my-6">text-transform</h3>
+                <h3 id="text-transform" class="my-6 text-blue">text-transform</h3>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -274,7 +305,7 @@
                     </tbody>
                 </table>
 
-                <h3 class="my-6">text-decoration</h3>
+                <h3 id="text-decoration" class="my-6 text-blue">text-decoration</h3>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -297,7 +328,7 @@
                     </tbody>
                 </table>
 
-                <h3 class="my-6">text-align</h3>
+                <h3 id="text-align" class="my-6 text-blue">text-align</h3>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -328,7 +359,7 @@
 
         <h2 class="my-6">Color</h2>
 
-        <h3 class="my-6">background-color, border-color, color</h2>
+        <h3 id="background-color" class="my-6 text-blue">background-color, border-color, color</h2>
 
         <table class="text-grey-dark text-grey-dark text-grey-dark w-full font-normal leading-normal font-mono text-xs border-separate">
             <tbody class="">
