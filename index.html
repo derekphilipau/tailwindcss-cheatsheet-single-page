@@ -11,13 +11,15 @@
         <h1 class="my-6">Tailwind Cheatsheet</h1>
 
         <div class="text-sm">
+            <!------------------------ Flexbox ------------------------>
             <a class="text-blue" href="#flex-display">flex-display</a>,
             <a class="text-blue" href="#flex-direction">flex-direction</a>,
             <a class="text-blue" href="#flex-wrap">flex-wrap</a>,
             <a class="text-blue" href="#align-items">align-items</a>,
             <a class="text-blue" href="#align-content">align-content</a>,
-            <a class="text-blue" href="#align-content">align-self</a>,
+            <a class="text-blue" href="#align-self">align-self</a>,
 
+            <!------------------------ Typography ------------------------>
             <a class="text-blue" href="#font-size">font-size</a>,
             <a class="text-blue" href="#font-family">font-family</a>,
             <a class="text-blue" href="#font-weight">font-weight</a>,
@@ -27,9 +29,13 @@
             <a class="text-blue" href="#text-transform">text-transform</a>,
             <a class="text-blue" href="#text-decoration">text-decoration</a>,
             <a class="text-blue" href="#text-align">text-align</a>,
+
+            <!------------------------ Color ------------------------>
             <a class="text-blue" href="#background-color">background-color</a>,
             <a class="text-blue" href="#background-color">border-color</a>,
             <a class="text-blue" href="#background-color">color</a>
+
+
             <a class="text-blue" href="#"></a>
             <a class="text-blue" href="#"></a>
             <a class="text-blue" href="#"></a>
@@ -44,107 +50,107 @@
         <div class="flex">
             <div class="flex-1 px-2">
 
-                <h3 id="flex-display" class="my-6 text-blue">flex display</h3>
+                <h3 id="flex-display" class="my-4 text-blue">flex display</h3>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.flex</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.flex</h5>
                     <div class="flex bg-grey-lighter">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.inline-flex</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-dark">.inline-flex</h5>
                     <div class="inline-flex bg-grey-lighter">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h3 id="flex-direction" class="my-6 text-blue">flex-direction</h3>
+                <h3 id="flex-direction" class="my-4 text-blue">flex-direction</h3>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-row</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-dark">.flex-row</h5>
                     <div class="flex flex-row bg-grey-lighter">
-                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
-                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-row-reverse</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-dark">.flex-row-reverse</h5>
                     <div class="flex flex-row-reverse bg-grey-lighter">
-                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
-                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-col</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-dark">.flex-col</h5>
                     <div class="flex flex-col bg-grey-lighter">
-                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
-                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-col-reverse</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-dark">.flex-col-reverse</h5>
                     <div class="flex flex-col-reverse bg-grey-lighter">
-                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
-                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h3 id="flex-wrap" class="my-6 text-blue">flex-wrap</h3>
+                <h3 id="flex-wrap" class="my-4 text-blue">flex-wrap</h3>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-no-wrap</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-dark">.flex-no-wrap</h5>
                     <div class="flex flex-no-wrap bg-grey-lighter">
                         <div class="w-2/5 flex-none">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         </div>
                         <div class="w-2/5 flex-none">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
                         </div>
                         <div class="w-2/5 flex-none">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                         </div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-wrap</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-dark">.flex-wrap</h5>
                     <div class="flex flex-wrap bg-grey-lighter">
                         <div class="w-2/5">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         </div>
                         <div class="w-2/5">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
                         </div>
                         <div class="w-2/5">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                         </div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-wrap-reverse</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-dark">.flex-wrap-reverse</h5>
                     <div class="flex flex-wrap-reverse bg-grey-lighter">
                         <div class="w-2/5">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         </div>
                         <div class="w-2/5">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
                         </div>
                         <div class="w-2/5">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                         </div>
                     </div>
                 </div>
@@ -152,209 +158,208 @@
             </div>
             <div class="flex-1 px-2">
 
-                <h3 id="align-items" class="my-6 text-blue">align-items</h3>
+                <h3 id="align-items" class="my-4 text-blue">align-items</h3>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.items-stretch</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.items-stretch</h5>
                     <div class="flex items-stretch bg-grey-lighter h-16">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.items-start</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.items-start</h5>
                     <div class="flex items-start bg-grey-lighter h-16">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.items-center</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.items-center</h5>
                     <div class="flex items-center bg-grey-lighter h-16">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.items-end</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.items-end</h5>
                     <div class="flex items-end bg-grey-lighter h-16">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.items-baseline</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.items-baseline</h5>
                     <div class="flex items-baseline bg-grey-lighter h-16">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-base">1</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-xs">1</div>
                         <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-2xl">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-lg">3</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-base">3</div>
                     </div>
                 </div>
 
             </div>
 
             <div class="flex-1 px-2">
-                <h3 id="align-content" class="my-6 text-blue">align-content</h3>
+                <h3 id="align-content" class="my-4 text-blue">align-content</h3>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.content-start</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.content-start</h5>
                     <div class="flex content-start flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">4</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">4</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">5</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">5</div>
                         </div>
                     </div>
                 </div>
 
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.content-center</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.content-center</h5>
                     <div class="flex content-center flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">4</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">4</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">5</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">5</div>
                         </div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.content-end</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.content-end</h5>
                     <div class="flex content-end flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">4</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">4</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">5</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">5</div>
                         </div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.content-between</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.content-between</h5>
                     <div class="flex content-between flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">4</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">4</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">5</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">5</div>
                         </div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.content-around</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
-
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.content-around</h5>
                     <div class="flex content-around flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">4</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">4</div>
                         </div>
                         <div class="w-1/3">
-                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">5</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">5</div>
                         </div>
                     </div>
                 </div>
 
-                <h3 id="align-self" class="my-6 text-blue">align-self</h3>
+                <h3 id="align-self" class="my-4 text-blue">align-self</h3>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.self-auto</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.self-auto</h5>
                     <div class="flex items-stretch bg-grey-lighter h-24">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="self-auto flex-1 text-grey-darkest text-center bg-grey px-2 py-1 m-2">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="self-auto flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.self-start</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.self-start</h5>
                     <div class="flex items-stretch bg-grey-lighter h-24">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="self-start flex-1 text-grey-darkest text-center bg-grey px-2 py-1 m-2">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="self-start flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.self-center</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.self-center</h5>
                     <div class="flex items-stretch bg-grey-lighter h-24">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="self-center flex-1 text-grey-darkest text-center bg-grey px-2 py-1 m-2">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="self-center flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.self-end</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.self-end</h5>
                     <div class="flex items-stretch bg-grey-lighter h-24">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="self-end flex-1 text-grey-darkest text-center bg-grey px-2 py-1 m-2">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="self-end flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
-                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.self-stretch</h5>
-                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <h5 class="mb-2 font-mono text-grey-darker">.self-stretch</h5>
                     <div class="flex items-start bg-grey-lighter h-24">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
-                        <div class="self-stretch flex-1 text-grey-darkest text-center bg-grey px-2 py-1 m-2">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="self-stretch flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
                 </div>
 
@@ -368,7 +373,7 @@
 
         <h2 class="my-6">Typography</h2>
 
-        <h3 id="font-size" class="my-6 text-blue">font-size</h3>
+        <h3 id="font-size" class="my-4 text-blue">font-size</h3>
 
         <table class="text-grey-dark w-full text-left table-collapse">
             <tbody class="whitespace-no-wrap">
@@ -414,7 +419,7 @@
 
         <div class="flex">
             <div class="flex-1 px-2">
-                <h3 id="font-family" class="my-6 text-blue">font-family</h3>
+                <h3 id="font-family" class="my-4 text-blue">font-family</h3>
 
                 <table class="text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -437,7 +442,7 @@
                     </tbody>
                 </table>
 
-                <h3 id="font-weight" class="my-6 text-blue">font-weight</h3>
+                <h3 id="font-weight" class="my-4 text-blue">font-weight</h3>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -484,7 +489,7 @@
                     </tbody>
                 </table>
 
-                <h3 id="letter-spacing" class="my-6 text-blue">letter-spacing</h3>
+                <h3 id="letter-spacing" class="my-4 text-blue">letter-spacing</h3>
 
                 <table class="text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -507,7 +512,7 @@
                     </tbody>
                 </table>
 
-                <h3 id="line-height" class="my-6 text-blue">line-height</h3>
+                <h3 id="line-height" class="my-4 text-blue">line-height</h3>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -535,7 +540,7 @@
                 </table>
             </div>
             <div class="flex-1 px-2">
-                <h3 id="font-style" class="my-6 text-blue">font-style</h3>
+                <h3 id="font-style" class="my-4 text-blue">font-style</h3>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -554,7 +559,7 @@
                     </tbody>
                 </table>
 
-                <h3 id="text-transform" class="my-6 text-blue">text-transform</h3>
+                <h3 id="text-transform" class="my-4 text-blue">text-transform</h3>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -581,7 +586,7 @@
                     </tbody>
                 </table>
 
-                <h3 id="text-decoration" class="my-6 text-blue">text-decoration</h3>
+                <h3 id="text-decoration" class="my-4 text-blue">text-decoration</h3>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -604,7 +609,7 @@
                     </tbody>
                 </table>
 
-                <h3 id="text-align" class="my-6 text-blue">text-align</h3>
+                <h3 id="text-align" class="my-4 text-blue">text-align</h3>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -635,7 +640,7 @@
 
         <h2 class="my-6">Color</h2>
 
-        <h3 id="background-color" class="my-6 text-blue">background-color, border-color, color</h2>
+        <h3 id="background-color" class="my-4 text-blue">background-color, border-color, color</h2>
 
             <table class="text-grey-dark text-grey-dark text-grey-dark w-full font-normal leading-normal font-mono text-xs border-separate">
                 <tbody class="">
