@@ -6,56 +6,90 @@
 
 <body class="text-black">
 
-    <div class="w-full px-4 pb-8">
+        <nav class="flex items-center justify-between flex-wrap bg-teal p-4 mb-4">
+                <div class="flex items-center flex-no-shrink text-white mr-6">
+                    <svg class="fill-current h-6 w-6 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+                        />
+                    </svg>
+                    <span class="font-semibold text-xl tracking-tight">Tailwind CSS Cheatsheet</span>
+                </div>
+                <div class="block lg:hidden">
+                    <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                    <div class="text-sm lg:flex-grow">
+                        <a href="https://tailwindcss.com/docs/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+                            Tailwind CSS Docs
+                        </a>
+                        <a href="https://github.com/tailwindcss/tailwindcss" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+                            Tailwind CSS Github
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/derekphilipau/tailwindcss-cheatsheet-single-page" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+                            Tailwind CSS Cheatsheet Github
+                        </a>
+                    </div>
+                </div>
+            </nav>
 
-        <h1 class="my-6">Tailwindcss Cheatsheet</h1>
+    <div class="w-full px-4 pb-8">
 
         <div class="text-sm">
             <!------------------------ Flexbox ------------------------>
-            <a class="text-blue" href="#flex-display">flex-display</a>,
-            <a class="text-blue" href="#flex-direction">flex-direction</a>,
-            <a class="text-blue" href="#flex-wrap">flex-wrap</a>,
-            <a class="text-blue" href="#align-items">align-items</a>,
-            <a class="text-blue" href="#align-content">align-content</a>,
-            <a class="text-blue" href="#align-self">align-self</a>,
+            <a class="font-bold" href="#flexbox">Flexbox</a>,
+            <a href="#flex-display">flex-display</a>,
+            <a href="#flex-direction">flex-direction</a>,
+            <a href="#flex-wrap">flex-wrap</a>,
+            <a href="#align-items">align-items</a>,
+            <a href="#align-content">align-content</a>,
+            <a href="#align-self">align-self</a>,
 
             <!------------------------ Typography ------------------------>
-            <a class="text-blue" href="#font-size">font-size</a>,
-            <a class="text-blue" href="#font-family">font-family</a>,
-            <a class="text-blue" href="#font-weight">font-weight</a>,
-            <a class="text-blue" href="#letter-spacing">letter-spacing</a>,
-            <a class="text-blue" href="#line-height">line-height</a>,
-            <a class="text-blue" href="#font-style">font-style</a>,
-            <a class="text-blue" href="#text-transform">text-transform</a>,
-            <a class="text-blue" href="#text-decoration">text-decoration</a>,
-            <a class="text-blue" href="#text-align">text-align</a>,
+            <a class="font-bold" href="#typography">Typography</a>,
+            <a href="#font-size">font-size</a>,
+            <a href="#font-family">font-family</a>,
+            <a href="#font-weight">font-weight</a>,
+            <a href="#letter-spacing">letter-spacing</a>,
+            <a href="#line-height">line-height</a>,
+            <a href="#font-style">font-style</a>,
+            <a href="#text-transform">text-transform</a>,
+            <a href="#text-decoration">text-decoration</a>,
+            <a href="#text-align">text-align</a>,
 
             <!------------------------ Color ------------------------>
-            <a class="text-blue" href="#background-color">background-color</a>,
-            <a class="text-blue" href="#background-color">border-color</a>,
-            <a class="text-blue" href="#background-color">color</a>
+            <a class="font-bold" href="#color">Color</a>,
+            <a href="#background-color">background-color</a>,
+            <a href="#background-color">border-color</a>,
+            <a href="#background-color">color</a>
 
 
-            <a class="text-blue" href="#"></a>
-            <a class="text-blue" href="#"></a>
-            <a class="text-blue" href="#"></a>
-            <a class="text-blue" href="#"></a>
-            <a class="text-blue" href="#"></a>
-            <a class="text-blue" href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
         </div>
 
 
-        <h2 class="my-6">Flexbox</h2>
+        <h2 id="flexbox" class="my-4">Flexbox</h2>
 
         <div class="flex">
             <div class="flex-1 px-2">
 
-                <h3 id="flex-display" class="my-4">
+                <h4 id="flex-display" class="my-4">
                     <a href="https://tailwindcss.com/docs/flexbox-display">flex display</a>
-                </h3>
+                </h4>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.flex</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex</p>
                     <div class="flex bg-grey-lighter">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -64,7 +98,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-dark">.inline-flex</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.inline-flex</p>
                     <div class="inline-flex bg-grey-lighter">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -72,12 +106,12 @@
                     </div>
                 </div>
 
-                <h3 id="flex-direction" class="my-4">
-                        <a href="https://tailwindcss.com/docs/flexbox-direction">flex direction</a>
-                    </h3>
+                <h4 id="flex-direction" class="my-4">
+                    <a href="https://tailwindcss.com/docs/flexbox-direction">flex direction</a>
+                </h4>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-dark">.flex-row</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-row</p>
                     <div class="flex flex-row bg-grey-lighter">
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -86,7 +120,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-dark">.flex-row-reverse</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-row-reverse</p>
                     <div class="flex flex-row-reverse bg-grey-lighter">
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -95,7 +129,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-dark">.flex-col</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-col</p>
                     <div class="flex flex-col bg-grey-lighter">
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -104,7 +138,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-dark">.flex-col-reverse</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-col-reverse</p>
                     <div class="flex flex-col-reverse bg-grey-lighter">
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -112,12 +146,12 @@
                     </div>
                 </div>
 
-                <h3 id="flex-wrap" class="my-4">
+                <h4 id="flex-wrap" class="my-4">
                     <a href="https://tailwindcss.com/docs/flexbox-wrapping">flex wrap</a>
-                </h3>
+                </h4>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-dark">.flex-no-wrap</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-no-wrap</p>
                     <div class="flex flex-no-wrap bg-grey-lighter">
                         <div class="w-2/5 flex-none">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -132,7 +166,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-dark">.flex-wrap</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-wrap</p>
                     <div class="flex flex-wrap bg-grey-lighter">
                         <div class="w-2/5">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -147,7 +181,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-dark">.flex-wrap-reverse</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-wrap-reverse</p>
                     <div class="flex flex-wrap-reverse bg-grey-lighter">
                         <div class="w-2/5">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -164,12 +198,12 @@
             </div>
             <div class="flex-1 px-2">
 
-                <h3 id="align-items" class="my-4">
+                <h4 id="align-items" class="my-4">
                     <a href="https://tailwindcss.com/docs/flexbox-align-items">align-items</a>
-                </h3>
+                </h4>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.items-stretch</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.items-stretch</p>
                     <div class="flex items-stretch bg-grey-lighter h-16">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -178,7 +212,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.items-start</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.items-start</p>
                     <div class="flex items-start bg-grey-lighter h-16">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -187,7 +221,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.items-center</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.items-center</p>
                     <div class="flex items-center bg-grey-lighter h-16">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -196,7 +230,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.items-end</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.items-end</p>
                     <div class="flex items-end bg-grey-lighter h-16">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -205,7 +239,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.items-baseline</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.items-baseline</p>
                     <div class="flex items-baseline bg-grey-lighter h-16">
                         <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-xs">1</div>
                         <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-2xl">2</div>
@@ -217,12 +251,12 @@
 
             <div class="flex-1 px-2">
 
-                <h3 id="align-content" class="my-4">
+                <h4 id="align-content" class="my-4">
                     <a href="https://tailwindcss.com/docs/flexbox-align-content">align-content</a>
-                </h3>
+                </h4>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.content-start</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.content-start</p>
                     <div class="flex content-start flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -244,7 +278,7 @@
 
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.content-center</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.content-center</p>
                     <div class="flex content-center flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -265,7 +299,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.content-end</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.content-end</p>
                     <div class="flex content-end flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -286,7 +320,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.content-between</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.content-between</p>
                     <div class="flex content-between flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -307,7 +341,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.content-around</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.content-around</p>
                     <div class="flex content-around flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -327,12 +361,12 @@
                     </div>
                 </div>
 
-                <h3 id="align-self" class="my-4">
+                <h4 id="align-self" class="my-4">
                     <a href="https://tailwindcss.com/docs/flexbox-align-self">align-self</a>
-                </h3>
+                </h4>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.self-auto</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.self-auto</p>
                     <div class="flex items-stretch bg-grey-lighter h-24">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="self-auto flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
@@ -341,7 +375,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.self-start</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.self-start</p>
                     <div class="flex items-stretch bg-grey-lighter h-24">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="self-start flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
@@ -350,7 +384,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.self-center</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.self-center</p>
                     <div class="flex items-stretch bg-grey-lighter h-24">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="self-center flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
@@ -359,7 +393,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.self-end</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.self-end</p>
                     <div class="flex items-stretch bg-grey-lighter h-24">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="self-end flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
@@ -368,7 +402,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <h5 class="mb-2 font-mono text-grey-darker">.self-stretch</h5>
+                    <p class="font-mono text-xs text-grey-dark mb-2">.self-stretch</p>
                     <div class="flex items-start bg-grey-lighter h-24">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="self-stretch flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
@@ -384,11 +418,11 @@
 
 
 
-        <h2 class="my-6">Typography</h2>
+        <h2 id="typography" class="my-4">Typography</h2>
 
-        <h3 id="font-size" class="my-4">
+        <h4 id="font-size" class="my-4">
             <a href="https://tailwindcss.com/docs/text-sizing">font-size</a>
-        </h3>
+        </h4>
 
         <table class="text-grey-dark w-full text-left table-collapse">
             <tbody class="whitespace-no-wrap">
@@ -434,9 +468,9 @@
 
         <div class="flex">
             <div class="flex-1 px-2">
-                <h3 id="font-family" class="my-4">
+                <h4 id="font-family" class="my-4">
                     <a href="https://tailwindcss.com/docs/fonts">font-family</a>
-                </h3>
+                </h4>
 
                 <table class="text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -459,9 +493,9 @@
                     </tbody>
                 </table>
 
-                <h3 id="font-weight" class="my-4">
+                <h4 id="font-weight" class="my-4">
                     <a href="https://tailwindcss.com/docs/font-weight">font-weight</a>
-                </h3>
+                </h4>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -508,9 +542,9 @@
                     </tbody>
                 </table>
 
-                <h3 id="letter-spacing" class="my-4">
+                <h4 id="letter-spacing" class="my-4">
                     <a href="https://tailwindcss.com/docs/letter-spacing">letter-spacing</a>
-                </h3>
+                </h4>
 
                 <table class="text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -533,9 +567,9 @@
                     </tbody>
                 </table>
 
-                <h3 id="line-height" class="my-4">
+                <h4 id="line-height" class="my-4">
                     <a href="https://tailwindcss.com/docs/line-height">line-height</a>
-                </h3>
+                </h4>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -563,9 +597,9 @@
                 </table>
             </div>
             <div class="flex-1 px-2">
-                <h3 id="font-style" class="my-4">
+                <h4 id="font-style" class="my-4">
                     <a href="https://tailwindcss.com/docs/text-style">font-style</a>
-                </h3>
+                </h4>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -584,9 +618,9 @@
                     </tbody>
                 </table>
 
-                <h3 id="font-style" class="my-4">
+                <h4 id="font-style" class="my-4">
                     <a href="https://tailwindcss.com/docs/text-style">text-transform</a>
-                </h3>
+                </h4>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -613,9 +647,9 @@
                     </tbody>
                 </table>
 
-                <h3 id="text-decoration" class="my-4">
+                <h4 id="text-decoration" class="my-4">
                     <a href="https://tailwindcss.com/docs/text-style">text-decoration</a>
-                </h3>
+                </h4>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -638,9 +672,9 @@
                     </tbody>
                 </table>
 
-                <h3 id="text-align" class="my-4">
+                <h4 id="text-align" class="my-4">
                     <a href="https://tailwindcss.com/docs/text-alignment">text-align</a>
-                </h3>
+                </h4>
 
                 <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
@@ -669,13 +703,13 @@
             </div>
         </div>
 
-        <h2 class="my-6">Color</h2>
+        <h2 id="color" class="my-4">Color</h2>
 
-        <h3 id="background-color" class="my-4">
+        <h4 id="background-color" class="my-4">
             <a href="https://tailwindcss.com/docs/colors/">color</a>,
             <a href="https://tailwindcss.com/docs/background-color/">background-color</a>,
             <a href="https://tailwindcss.com/docs/border-color/">border-color</a>
-        </h3>
+        </h4>
 
         <table class="text-grey-dark text-grey-dark text-grey-dark w-full font-normal leading-normal font-mono text-xs border-separate">
             <tbody class="">
