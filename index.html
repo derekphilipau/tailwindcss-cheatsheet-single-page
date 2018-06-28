@@ -13,6 +13,11 @@
         <div class="text-sm">
             <a class="text-blue" href="#flex-display">flex-display</a>,
             <a class="text-blue" href="#flex-direction">flex-direction</a>,
+            <a class="text-blue" href="#flex-wrap">flex-wrap</a>,
+            <a class="text-blue" href="#align-items">align-items</a>,
+            <a class="text-blue" href="#align-content">align-content</a>,
+            <a class="text-blue" href="#align-content">align-self</a>,
+
             <a class="text-blue" href="#font-size">font-size</a>,
             <a class="text-blue" href="#font-family">font-family</a>,
             <a class="text-blue" href="#font-weight">font-weight</a>,
@@ -41,53 +46,324 @@
 
                 <h3 id="flex-display" class="my-6 text-blue">flex display</h3>
 
-                <h5 class="my-2 font-mono text-grey-darker">.flex</h5>
-                <div class="flex bg-grey-lighter">
-                    <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
-                    <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
-                    <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.flex</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
                 </div>
 
-                <h5 class="my-2 font-mono text-grey-dark">.inline-flex</h5>
-                <div class="inline-flex bg-grey-lighter">
-                    <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
-                    <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
-                    <div class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2">flex-1</div>
+                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.inline-flex</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="inline-flex bg-grey-lighter">
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
                 </div>
 
                 <h3 id="flex-direction" class="my-6 text-blue">flex-direction</h3>
 
-                <h5 class="my-2 font-mono text-grey-dark">.flex-row</h5>
-                <div class="flex flex-row bg-grey-lighter">
-                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">1</div>
-                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">2</div>
-                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div>
+                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-row</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex flex-row bg-grey-lighter">
+                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
                 </div>
 
-                <h5 class="my-2 font-mono text-grey-dark">.flex-row-reverse</h5>
-                <div class="flex flex-row-reverse bg-grey-lighter">
-                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">1</div>
-                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">2</div>
-                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div>
+                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-row-reverse</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex flex-row-reverse bg-grey-lighter">
+                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
                 </div>
 
-                <h5 class="my-2 font-mono text-grey-dark">.flex-col</h5>
-                <div class="flex flex-col bg-grey-lighter">
-                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">1</div>
-                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">2</div>
-                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div>
+                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-col</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex flex-col bg-grey-lighter">
+                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
                 </div>
 
-                <h5 class="my-2 font-mono text-grey-dark">.flex-col-reverse</h5>
-                <div class="flex flex-col-reverse bg-grey-lighter">
-                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">1</div>
-                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">2</div>
-                    <div class="text-grey-darker text-center bg-grey-light px-4 py-2 m-2">3</div>
+                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-col-reverse</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex flex-col-reverse bg-grey-lighter">
+                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
                 </div>
+
+                <h3 id="flex-wrap" class="my-6 text-blue">flex-wrap</h3>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-no-wrap</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex flex-no-wrap bg-grey-lighter">
+                        <div class="w-2/5 flex-none">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        </div>
+                        <div class="w-2/5 flex-none">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        </div>
+                        <div class="w-2/5 flex-none">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-wrap</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex flex-wrap bg-grey-lighter">
+                        <div class="w-2/5">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        </div>
+                        <div class="w-2/5">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        </div>
+                        <div class="w-2/5">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-dark">.flex-wrap-reverse</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex flex-wrap-reverse bg-grey-lighter">
+                        <div class="w-2/5">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        </div>
+                        <div class="w-2/5">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        </div>
+                        <div class="w-2/5">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="flex-1 px-2">
+
+                <h3 id="align-items" class="my-6 text-blue">align-items</h3>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.items-stretch</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex items-stretch bg-grey-lighter h-16">
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.items-start</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex items-start bg-grey-lighter h-16">
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.items-center</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex items-center bg-grey-lighter h-16">
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.items-end</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex items-end bg-grey-lighter h-16">
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.items-baseline</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex items-baseline bg-grey-lighter h-16">
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-base">1</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-2xl">2</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-lg">3</div>
+                    </div>
+                </div>
+
             </div>
+
+            <div class="flex-1 px-2">
+                <h3 id="align-content" class="my-6 text-blue">align-content</h3>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.content-start</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex content-start flex-wrap bg-grey-lighter h-32">
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">4</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">5</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.content-center</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex content-center flex-wrap bg-grey-lighter h-32">
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">4</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.content-end</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex content-end flex-wrap bg-grey-lighter h-32">
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">4</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.content-between</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex content-between flex-wrap bg-grey-lighter h-32">
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">4</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.content-around</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+
+                    <div class="flex content-around flex-wrap bg-grey-lighter h-32">
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">2</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">4</div>
+                        </div>
+                        <div class="w-1/3">
+                            <div class="text-grey-darker text-center bg-grey-light px-2 py-1 m-2">5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 id="align-self" class="my-6 text-blue">align-self</h3>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.self-auto</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex items-stretch bg-grey-lighter h-24">
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="self-auto flex-1 text-grey-darkest text-center bg-grey px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.self-start</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex items-stretch bg-grey-lighter h-24">
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="self-start flex-1 text-grey-darkest text-center bg-grey px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.self-center</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex items-stretch bg-grey-lighter h-24">
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="self-center flex-1 text-grey-darkest text-center bg-grey px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.self-end</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex items-stretch bg-grey-lighter h-24">
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="self-end flex-1 text-grey-darkest text-center bg-grey px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+                <h5 class="mt-4 mb-2 font-mono text-grey-darker">.self-stretch</h5>
+                <div class="rounded overflow-hidden border border-grey-light p-3 bg-white">
+                    <div class="flex items-start bg-grey-lighter h-24">
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="self-stretch flex-1 text-grey-darkest text-center bg-grey px-2 py-1 m-2">2</div>
+                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
+
+
 
 
         <h2 class="my-6">Typography</h2>
@@ -361,763 +637,763 @@
 
         <h3 id="background-color" class="my-6 text-blue">background-color, border-color, color</h2>
 
-        <table class="text-grey-dark text-grey-dark text-grey-dark w-full font-normal leading-normal font-mono text-xs border-separate">
-            <tbody class="">
-                <tr>
-                    <td class="rounded bg-transparent text-black p-1">.bg-transparent</td>
-                    <td class="rounded bg-transparent text-black p-1">transparent</td>
-                    <td class="rounded border border-transparent">.border-transparent</td>
-                    <td class="rounded text-black p-1">.text-transparent</span>
-                    </td>
-                    <td class="rounded bg-black text-black p-1">.text-transparent</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-white text-black p-1">.bg-white</td>
-                    <td class="rounded bg-white text-black p-1">#ffffff</td>
-                    <td class="rounded border border-white">.border-white</td>
-                    <td class="rounded text-white p-1">.text-white</span>
-                    </td>
-                    <td class="rounded bg-black text-white p-1">.text-white</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-black text-white p-1">.bg-black</td>
-                    <td class="rounded bg-black text-white p-1">#22292f</td>
-                    <td class="rounded border border-black">.border-black</td>
-                    <td class="rounded text-black p-1">.text-black</span>
-                    </td>
-                    <td class="rounded bg-black text-black p-1">.text-black</span>
-                    </td>
-                </tr>
+            <table class="text-grey-dark text-grey-dark text-grey-dark w-full font-normal leading-normal font-mono text-xs border-separate">
+                <tbody class="">
+                    <tr>
+                        <td class="rounded bg-transparent text-black p-1">.bg-transparent</td>
+                        <td class="rounded bg-transparent text-black p-1">transparent</td>
+                        <td class="rounded border border-transparent">.border-transparent</td>
+                        <td class="rounded text-black p-1">.text-transparent</span>
+                        </td>
+                        <td class="rounded bg-black text-black p-1">.text-transparent</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-white text-black p-1">.bg-white</td>
+                        <td class="rounded bg-white text-black p-1">#ffffff</td>
+                        <td class="rounded border border-white">.border-white</td>
+                        <td class="rounded text-white p-1">.text-white</span>
+                        </td>
+                        <td class="rounded bg-black text-white p-1">.text-white</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-black text-white p-1">.bg-black</td>
+                        <td class="rounded bg-black text-white p-1">#22292f</td>
+                        <td class="rounded border border-black">.border-black</td>
+                        <td class="rounded text-black p-1">.text-black</span>
+                        </td>
+                        <td class="rounded bg-black text-black p-1">.text-black</span>
+                        </td>
+                    </tr>
 
-                <!------------------------ grey ------------------------>
-                <tr>
-                    <td class="rounded bg-grey-lightest text-black p-1">.bg-grey-lightest</td>
-                    <td class="rounded bg-grey-lightest text-black p-1">#F8FAFC</td>
-                    <td class="rounded border border-grey-lightest">.border-grey-lightest</td>
-                    <td class="rounded text-grey-lightest p-1">.text-grey-lightest</span>
-                    </td>
-                    <td class="rounded bg-black text-grey-lightest p-1">.text-grey-lightest</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-grey-lighter text-black p-1">.bg-grey-lighter</td>
-                    <td class="rounded bg-grey-lighter text-black p-1">#F1F5F8</td>
-                    <td class="rounded border border-grey-lighter">.border-grey-lighter</td>
-                    <td class="rounded text-grey-lighter p-1">.text-grey-lighter</span>
-                    </td>
-                    <td class="rounded bg-black text-grey-lighter p-1">.text-grey-lighter</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-grey-light text-black p-1">.bg-grey-light</td>
-                    <td class="rounded bg-grey-light text-black p-1">#DAE1E7</td>
-                    <td class="rounded border border-grey-light">.border-grey-light</td>
-                    <td class="rounded text-grey-light p-1">.text-grey-light</span>
-                    </td>
-                    <td class="rounded bg-black text-grey-light p-1">.text-grey-light</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-grey text-black p-1">.bg-grey</td>
-                    <td class="rounded bg-grey text-black p-1">#B8C2CC</td>
-                    <td class="rounded border border-grey">.border-grey</td>
-                    <td class="rounded text-grey bg-white p-1">.text-grey</span>
-                    </td>
-                    <td class="rounded bg-black text-grey p-1">.text-grey</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-grey-dark text-white p-1">.bg-grey-dark</td>
-                    <td class="rounded bg-grey-dark text-white p-1">#8795A1</td>
-                    <td class="rounded border border-grey-dark">.border-grey-dark</td>
-                    <td class="rounded text-grey-dark bg-white p-1">.text-grey-dark</span>
-                    </td>
-                    <td class="rounded bg-black text-grey-dark p-1">.text-grey-dark</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-grey-darker text-white p-1">.bg-grey-darker</td>
-                    <td class="rounded bg-grey-darker text-white p-1">#606F7B</td>
-                    <td class="rounded border border-grey-darker">.border-grey-darker</td>
-                    <td class="rounded text-grey-darker bg-white p-1">.text-grey-darker</span>
-                    </td>
-                    <td class="rounded bg-black text-grey-darker p-1">.text-grey-darker</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-grey-darkest text-white p-1">.bg-grey-darkest</td>
-                    <td class="rounded bg-grey-darkest text-white p-1">#3D4852</td>
-                    <td class="rounded border border-grey-darkest">.border-grey-darkest</td>
-                    <td class="rounded text-grey-darkest bg-white p-1">.text-grey-darkest</span>
-                    </td>
-                    <td class="rounded bg-black text-grey-darkest p-1">.text-grey-darkest</span>
-                    </td>
-                </tr>
+                    <!------------------------ grey ------------------------>
+                    <tr>
+                        <td class="rounded bg-grey-lightest text-black p-1">.bg-grey-lightest</td>
+                        <td class="rounded bg-grey-lightest text-black p-1">#F8FAFC</td>
+                        <td class="rounded border border-grey-lightest">.border-grey-lightest</td>
+                        <td class="rounded text-grey-lightest p-1">.text-grey-lightest</span>
+                        </td>
+                        <td class="rounded bg-black text-grey-lightest p-1">.text-grey-lightest</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-grey-lighter text-black p-1">.bg-grey-lighter</td>
+                        <td class="rounded bg-grey-lighter text-black p-1">#F1F5F8</td>
+                        <td class="rounded border border-grey-lighter">.border-grey-lighter</td>
+                        <td class="rounded text-grey-lighter p-1">.text-grey-lighter</span>
+                        </td>
+                        <td class="rounded bg-black text-grey-lighter p-1">.text-grey-lighter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-grey-light text-black p-1">.bg-grey-light</td>
+                        <td class="rounded bg-grey-light text-black p-1">#DAE1E7</td>
+                        <td class="rounded border border-grey-light">.border-grey-light</td>
+                        <td class="rounded text-grey-light p-1">.text-grey-light</span>
+                        </td>
+                        <td class="rounded bg-black text-grey-light p-1">.text-grey-light</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-grey text-black p-1">.bg-grey</td>
+                        <td class="rounded bg-grey text-black p-1">#B8C2CC</td>
+                        <td class="rounded border border-grey">.border-grey</td>
+                        <td class="rounded text-grey bg-white p-1">.text-grey</span>
+                        </td>
+                        <td class="rounded bg-black text-grey p-1">.text-grey</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-grey-dark text-white p-1">.bg-grey-dark</td>
+                        <td class="rounded bg-grey-dark text-white p-1">#8795A1</td>
+                        <td class="rounded border border-grey-dark">.border-grey-dark</td>
+                        <td class="rounded text-grey-dark bg-white p-1">.text-grey-dark</span>
+                        </td>
+                        <td class="rounded bg-black text-grey-dark p-1">.text-grey-dark</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-grey-darker text-white p-1">.bg-grey-darker</td>
+                        <td class="rounded bg-grey-darker text-white p-1">#606F7B</td>
+                        <td class="rounded border border-grey-darker">.border-grey-darker</td>
+                        <td class="rounded text-grey-darker bg-white p-1">.text-grey-darker</span>
+                        </td>
+                        <td class="rounded bg-black text-grey-darker p-1">.text-grey-darker</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-grey-darkest text-white p-1">.bg-grey-darkest</td>
+                        <td class="rounded bg-grey-darkest text-white p-1">#3D4852</td>
+                        <td class="rounded border border-grey-darkest">.border-grey-darkest</td>
+                        <td class="rounded text-grey-darkest bg-white p-1">.text-grey-darkest</span>
+                        </td>
+                        <td class="rounded bg-black text-grey-darkest p-1">.text-grey-darkest</span>
+                        </td>
+                    </tr>
 
-                <!------------------------ red ------------------------>
-                <tr>
-                    <td class="rounded bg-red-lightest text-black p-1">.bg-red-lightest</td>
-                    <td class="rounded bg-red-lightest text-black p-1">#FCEBEA</td>
-                    <td class="rounded border border-red-lightest p-1">.border-red-lightest</span>
-                    </td>
-                    <td class="rounded text-red-lightest p-1">.text-red-lightest</span>
-                    </td>
-                    <td class="rounded bg-black text-red-lightest p-1">.text-red-lightest</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-red-lighter text-black p-1">.bg-red-lighter</td>
-                    <td class="rounded bg-red-lighter text-black p-1">#F9ACAA</td>
-                    <td class="rounded border border-red-lighter p-1">.border-red-lighter</span>
-                    </td>
-                    <td class="rounded text-red-lighter p-1">.text-red-lighter</span>
-                    </td>
-                    <td class="rounded bg-black text-red-lighter p-1">.text-red-lighter</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-red-light text-black p-1">.bg-red-light</td>
-                    <td class="rounded bg-red-light text-black p-1">#EF5753</td>
-                    <td class="rounded border border-red-light p-1">.border-red-light</span>
-                    </td>
-                    <td class="rounded text-red-light p-1">.text-red-light</span>
-                    </td>
-                    <td class="rounded bg-black text-red-light p-1">.text-red-light</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-red text-black p-1">.bg-red</td>
-                    <td class="rounded bg-red text-black p-1">#E3342F</td>
-                    <td class="rounded border border-red p-1">.border-red</span>
-                    </td>
-                    <td class="rounded text-red p-1">.text-red</span>
-                    </td>
-                    <td class="rounded bg-black text-red p-1">.text-red</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-red-dark text-white p-1">.bg-red-dark</td>
-                    <td class="rounded bg-red-dark text-white p-1">#CC1F1A</td>
-                    <td class="rounded border border-red-dark p-1">.border-red-dark</span>
-                    </td>
-                    <td class="rounded text-red-dark p-1">.text-red-dark</span>
-                    </td>
-                    <td class="rounded bg-black text-red-dark p-1">.text-red-dark</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-red-darker text-white p-1">.bg-red-darker</td>
-                    <td class="rounded bg-red-darker text-white p-1">#621B18</td>
-                    <td class="rounded border border-red-darker p-1">.border-red-darker</span>
-                    </td>
-                    <td class="rounded text-red-darker p-1">.text-red-darker</span>
-                    </td>
-                    <td class="rounded bg-black text-red-darker p-1">.text-red-darker</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-red-darkest text-white p-1">.bg-red-darkest</td>
-                    <td class="rounded bg-red-darkest text-white p-1">#3B0D0C</td>
-                    <td class="rounded border border-red-darkest p-1">.border-red-darkest</span>
-                    </td>
-                    <td class="rounded text-red-darkest p-1">.text-red-darkest</span>
-                    </td>
-                    <td class="rounded bg-black text-red-darkest p-1">.text-red-darkest</span>
-                    </td>
-                </tr>
+                    <!------------------------ red ------------------------>
+                    <tr>
+                        <td class="rounded bg-red-lightest text-black p-1">.bg-red-lightest</td>
+                        <td class="rounded bg-red-lightest text-black p-1">#FCEBEA</td>
+                        <td class="rounded border border-red-lightest p-1">.border-red-lightest</span>
+                        </td>
+                        <td class="rounded text-red-lightest p-1">.text-red-lightest</span>
+                        </td>
+                        <td class="rounded bg-black text-red-lightest p-1">.text-red-lightest</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-red-lighter text-black p-1">.bg-red-lighter</td>
+                        <td class="rounded bg-red-lighter text-black p-1">#F9ACAA</td>
+                        <td class="rounded border border-red-lighter p-1">.border-red-lighter</span>
+                        </td>
+                        <td class="rounded text-red-lighter p-1">.text-red-lighter</span>
+                        </td>
+                        <td class="rounded bg-black text-red-lighter p-1">.text-red-lighter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-red-light text-black p-1">.bg-red-light</td>
+                        <td class="rounded bg-red-light text-black p-1">#EF5753</td>
+                        <td class="rounded border border-red-light p-1">.border-red-light</span>
+                        </td>
+                        <td class="rounded text-red-light p-1">.text-red-light</span>
+                        </td>
+                        <td class="rounded bg-black text-red-light p-1">.text-red-light</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-red text-black p-1">.bg-red</td>
+                        <td class="rounded bg-red text-black p-1">#E3342F</td>
+                        <td class="rounded border border-red p-1">.border-red</span>
+                        </td>
+                        <td class="rounded text-red p-1">.text-red</span>
+                        </td>
+                        <td class="rounded bg-black text-red p-1">.text-red</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-red-dark text-white p-1">.bg-red-dark</td>
+                        <td class="rounded bg-red-dark text-white p-1">#CC1F1A</td>
+                        <td class="rounded border border-red-dark p-1">.border-red-dark</span>
+                        </td>
+                        <td class="rounded text-red-dark p-1">.text-red-dark</span>
+                        </td>
+                        <td class="rounded bg-black text-red-dark p-1">.text-red-dark</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-red-darker text-white p-1">.bg-red-darker</td>
+                        <td class="rounded bg-red-darker text-white p-1">#621B18</td>
+                        <td class="rounded border border-red-darker p-1">.border-red-darker</span>
+                        </td>
+                        <td class="rounded text-red-darker p-1">.text-red-darker</span>
+                        </td>
+                        <td class="rounded bg-black text-red-darker p-1">.text-red-darker</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-red-darkest text-white p-1">.bg-red-darkest</td>
+                        <td class="rounded bg-red-darkest text-white p-1">#3B0D0C</td>
+                        <td class="rounded border border-red-darkest p-1">.border-red-darkest</span>
+                        </td>
+                        <td class="rounded text-red-darkest p-1">.text-red-darkest</span>
+                        </td>
+                        <td class="rounded bg-black text-red-darkest p-1">.text-red-darkest</span>
+                        </td>
+                    </tr>
 
-                <!------------------------ orange ------------------------>
-                <tr>
-                    <td class="rounded bg-orange-lightest text-black p-1">.bg-orange-lightest</td>
-                    <td class="rounded bg-orange-lightest text-black p-1">#FFF5EB</td>
-                    <td class="rounded border border-orange-lightest p-1">.border-orange-lightest</span>
-                    </td>
-                    <td class="rounded text-orange-lightest p-1">.text-orange-lightest</span>
-                    </td>
-                    <td class="rounded bg-black text-orange-lightest p-1">.text-orange-lightest</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-orange-lighter text-black p-1">.bg-orange-lighter</td>
-                    <td class="rounded bg-orange-lighter text-black p-1">#FCD9B6</td>
-                    <td class="rounded border border-orange-lighter p-1">.border-orange-lighter</span>
-                    </td>
-                    <td class="rounded text-orange-lighter p-1">.text-orange-lighter</span>
-                    </td>
-                    <td class="rounded bg-black text-orange-lighter p-1">.text-orange-lighter</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-orange-light text-black p-1">.bg-orange-light</td>
-                    <td class="rounded bg-orange-light text-black p-1">#FAAD63</td>
-                    <td class="rounded border border-orange-light p-1">.border-orange-light</span>
-                    </td>
-                    <td class="rounded text-orange-light p-1">.text-orange-light</span>
-                    </td>
-                    <td class="rounded bg-black text-orange-light p-1">.text-orange-light</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-orange text-black p-1">.bg-orange</td>
-                    <td class="rounded bg-orange text-black p-1">#F6993F</td>
-                    <td class="rounded border border-orange p-1">.border-orange</span>
-                    </td>
-                    <td class="rounded text-orange p-1">.text-orange</span>
-                    </td>
-                    <td class="rounded bg-black text-orange p-1">.text-orange</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-orange-dark text-white p-1">.bg-orange-dark</td>
-                    <td class="rounded bg-orange-dark text-white p-1">#DE751F</td>
-                    <td class="rounded border border-orange-dark p-1">.border-orange-dark</span>
-                    </td>
-                    <td class="rounded text-orange-dark p-1">.text-orange-dark</span>
-                    </td>
-                    <td class="rounded bg-black text-orange-dark p-1">.text-orange-dark</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-orange-darker text-white p-1">.bg-orange-darker</td>
-                    <td class="rounded bg-orange-darker text-white p-1">#613B1F</td>
-                    <td class="rounded border border-orange-darker p-1">.border-orange-darker</span>
-                    </td>
-                    <td class="rounded text-orange-darker p-1">.text-orange-darker</span>
-                    </td>
-                    <td class="rounded bg-black text-orange-darker p-1">.text-orange-darker</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-orange-darkest text-white p-1">.bg-orange-darkest</td>
-                    <td class="rounded bg-orange-darkest text-white p-1">#462A16</td>
-                    <td class="rounded border border-orange-darkest p-1">.border-orange-darkest</span>
-                    </td>
-                    <td class="rounded text-orange-darkest p-1">.text-orange-darkest</span>
-                    </td>
-                    <td class="rounded bg-black text-orange-darkest p-1">.text-orange-darkest</span>
-                    </td>
-                </tr>
-
-
-                <!------------------------ yellow ------------------------>
-                <tr>
-                    <td class="rounded bg-yellow-lightest text-black p-1">.bg-yellow-lightest</td>
-                    <td class="rounded bg-yellow-lightest text-black p-1">#FCFBEB</td>
-                    <td class="rounded border border-yellow-lightest p-1">.border-yellow-lightest</span>
-                    </td>
-                    <td class="rounded text-yellow-lightest p-1">.text-yellow-lightest</span>
-                    </td>
-                    <td class="rounded bg-black text-yellow-lightest p-1">.text-yellow-lightest</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-yellow-lighter text-black p-1">.bg-yellow-lighter</td>
-                    <td class="rounded bg-yellow-lighter text-black p-1">#FFF9C2</td>
-                    <td class="rounded border border-yellow-lighter p-1">.border-yellow-lighter</span>
-                    </td>
-                    <td class="rounded text-yellow-lighter p-1">.text-yellow-lighter</span>
-                    </td>
-                    <td class="rounded bg-black text-yellow-lighter p-1">.text-yellow-lighter</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-yellow-light text-black p-1">.bg-yellow-light</td>
-                    <td class="rounded bg-yellow-light text-black p-1">#FFF382</td>
-                    <td class="rounded border border-yellow-light p-1">.border-yellow-light</span>
-                    </td>
-                    <td class="rounded text-yellow-light p-1">.text-yellow-light</span>
-                    </td>
-                    <td class="rounded bg-black text-yellow-light p-1">.text-yellow-light</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-yellow text-black p-1">.bg-yellow</td>
-                    <td class="rounded bg-yellow text-black p-1">#FFED4A</td>
-                    <td class="rounded border border-yellow p-1">.border-yellow</span>
-                    </td>
-                    <td class="rounded text-yellow p-1">.text-yellow</span>
-                    </td>
-                    <td class="rounded bg-black text-yellow p-1">.text-yellow</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-yellow-dark text-white p-1">.bg-yellow-dark</td>
-                    <td class="rounded bg-yellow-dark text-white p-1">#F2D024</td>
-                    <td class="rounded border border-yellow-dark p-1">.border-yellow-dark</span>
-                    </td>
-                    <td class="rounded text-yellow-dark p-1">.text-yellow-dark</span>
-                    </td>
-                    <td class="rounded bg-black text-yellow-dark p-1">.text-yellow-dark</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-yellow-darker text-white p-1">.bg-yellow-darker</td>
-                    <td class="rounded bg-yellow-darker text-white p-1">#684F1D</td>
-                    <td class="rounded border border-yellow-darker p-1">.border-yellow-darker</span>
-                    </td>
-                    <td class="rounded text-yellow-darker p-1">.text-yellow-darker</span>
-                    </td>
-                    <td class="rounded bg-black text-yellow-darker p-1">.text-yellow-darker</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-yellow-darkest text-white p-1">.bg-yellow-darkest</td>
-                    <td class="rounded bg-yellow-darkest text-white p-1">#453411</td>
-                    <td class="rounded border border-yellow-darkest p-1">.border-yellow-darkest</span>
-                    </td>
-                    <td class="rounded text-yellow-darkest p-1">.text-yellow-darkest</span>
-                    </td>
-                    <td class="rounded bg-black text-yellow-darkest p-1">.text-yellow-darkest</span>
-                    </td>
-                </tr>
+                    <!------------------------ orange ------------------------>
+                    <tr>
+                        <td class="rounded bg-orange-lightest text-black p-1">.bg-orange-lightest</td>
+                        <td class="rounded bg-orange-lightest text-black p-1">#FFF5EB</td>
+                        <td class="rounded border border-orange-lightest p-1">.border-orange-lightest</span>
+                        </td>
+                        <td class="rounded text-orange-lightest p-1">.text-orange-lightest</span>
+                        </td>
+                        <td class="rounded bg-black text-orange-lightest p-1">.text-orange-lightest</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-orange-lighter text-black p-1">.bg-orange-lighter</td>
+                        <td class="rounded bg-orange-lighter text-black p-1">#FCD9B6</td>
+                        <td class="rounded border border-orange-lighter p-1">.border-orange-lighter</span>
+                        </td>
+                        <td class="rounded text-orange-lighter p-1">.text-orange-lighter</span>
+                        </td>
+                        <td class="rounded bg-black text-orange-lighter p-1">.text-orange-lighter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-orange-light text-black p-1">.bg-orange-light</td>
+                        <td class="rounded bg-orange-light text-black p-1">#FAAD63</td>
+                        <td class="rounded border border-orange-light p-1">.border-orange-light</span>
+                        </td>
+                        <td class="rounded text-orange-light p-1">.text-orange-light</span>
+                        </td>
+                        <td class="rounded bg-black text-orange-light p-1">.text-orange-light</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-orange text-black p-1">.bg-orange</td>
+                        <td class="rounded bg-orange text-black p-1">#F6993F</td>
+                        <td class="rounded border border-orange p-1">.border-orange</span>
+                        </td>
+                        <td class="rounded text-orange p-1">.text-orange</span>
+                        </td>
+                        <td class="rounded bg-black text-orange p-1">.text-orange</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-orange-dark text-white p-1">.bg-orange-dark</td>
+                        <td class="rounded bg-orange-dark text-white p-1">#DE751F</td>
+                        <td class="rounded border border-orange-dark p-1">.border-orange-dark</span>
+                        </td>
+                        <td class="rounded text-orange-dark p-1">.text-orange-dark</span>
+                        </td>
+                        <td class="rounded bg-black text-orange-dark p-1">.text-orange-dark</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-orange-darker text-white p-1">.bg-orange-darker</td>
+                        <td class="rounded bg-orange-darker text-white p-1">#613B1F</td>
+                        <td class="rounded border border-orange-darker p-1">.border-orange-darker</span>
+                        </td>
+                        <td class="rounded text-orange-darker p-1">.text-orange-darker</span>
+                        </td>
+                        <td class="rounded bg-black text-orange-darker p-1">.text-orange-darker</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-orange-darkest text-white p-1">.bg-orange-darkest</td>
+                        <td class="rounded bg-orange-darkest text-white p-1">#462A16</td>
+                        <td class="rounded border border-orange-darkest p-1">.border-orange-darkest</span>
+                        </td>
+                        <td class="rounded text-orange-darkest p-1">.text-orange-darkest</span>
+                        </td>
+                        <td class="rounded bg-black text-orange-darkest p-1">.text-orange-darkest</span>
+                        </td>
+                    </tr>
 
 
-                <!------------------------ green ------------------------>
-                <tr>
-                    <td class="rounded bg-green-lightest text-black p-1">.bg-green-lightest</td>
-                    <td class="rounded bg-green-lightest text-black p-1">#E3FCEC</td>
-                    <td class="rounded border border-green-lightest p-1">.border-green-lightest</span>
-                    </td>
-                    <td class="rounded text-green-lightest p-1">.text-green-lightest</span>
-                    </td>
-                    <td class="rounded bg-black text-green-lightest p-1">.text-green-lightest</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-green-lighter text-black p-1">.bg-green-lighter</td>
-                    <td class="rounded bg-green-lighter text-black p-1">#A2F5BF</td>
-                    <td class="rounded border border-green-lighter p-1">.border-green-lighter</span>
-                    </td>
-                    <td class="rounded text-green-lighter p-1">.text-green-lighter</span>
-                    </td>
-                    <td class="rounded bg-black text-green-lighter p-1">.text-green-lighter</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-green-light text-black p-1">.bg-green-light</td>
-                    <td class="rounded bg-green-light text-black p-1">#51D88A</td>
-                    <td class="rounded border border-green-light p-1">.border-green-light</span>
-                    </td>
-                    <td class="rounded text-green-light p-1">.text-green-light</span>
-                    </td>
-                    <td class="rounded bg-black text-green-light p-1">.text-green-light</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-green text-black p-1">.bg-green</td>
-                    <td class="rounded bg-green text-black p-1">#38C172</td>
-                    <td class="rounded border border-green p-1">.border-green</span>
-                    </td>
-                    <td class="rounded text-green p-1">.text-green</span>
-                    </td>
-                    <td class="rounded bg-black text-green p-1">.text-green</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-green-dark text-white p-1">.bg-green-dark</td>
-                    <td class="rounded bg-green-dark text-white p-1">#1F9D55</td>
-                    <td class="rounded border border-green-dark p-1">.border-green-dark</span>
-                    </td>
-                    <td class="rounded text-green-dark p-1">.text-green-dark</span>
-                    </td>
-                    <td class="rounded bg-black text-green-dark p-1">.text-green-dark</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-green-darker text-white p-1">.bg-green-darker</td>
-                    <td class="rounded bg-green-darker text-white p-1">#1A4731</td>
-                    <td class="rounded border border-green-darker p-1">.border-green-darker</span>
-                    </td>
-                    <td class="rounded text-green-darker p-1">.text-green-darker</span>
-                    </td>
-                    <td class="rounded bg-black text-green-darker p-1">.text-green-darker</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-green-darkest text-white p-1">.bg-green-darkest</td>
-                    <td class="rounded bg-green-darkest text-white p-1">#0F2F21</td>
-                    <td class="rounded border border-green-darkest p-1">.border-green-darkest</span>
-                    </td>
-                    <td class="rounded text-green-darkest p-1">.text-green-darkest</span>
-                    </td>
-                    <td class="rounded bg-black text-green-darkest p-1">.text-green-darkest</span>
-                    </td>
-                </tr>
+                    <!------------------------ yellow ------------------------>
+                    <tr>
+                        <td class="rounded bg-yellow-lightest text-black p-1">.bg-yellow-lightest</td>
+                        <td class="rounded bg-yellow-lightest text-black p-1">#FCFBEB</td>
+                        <td class="rounded border border-yellow-lightest p-1">.border-yellow-lightest</span>
+                        </td>
+                        <td class="rounded text-yellow-lightest p-1">.text-yellow-lightest</span>
+                        </td>
+                        <td class="rounded bg-black text-yellow-lightest p-1">.text-yellow-lightest</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-yellow-lighter text-black p-1">.bg-yellow-lighter</td>
+                        <td class="rounded bg-yellow-lighter text-black p-1">#FFF9C2</td>
+                        <td class="rounded border border-yellow-lighter p-1">.border-yellow-lighter</span>
+                        </td>
+                        <td class="rounded text-yellow-lighter p-1">.text-yellow-lighter</span>
+                        </td>
+                        <td class="rounded bg-black text-yellow-lighter p-1">.text-yellow-lighter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-yellow-light text-black p-1">.bg-yellow-light</td>
+                        <td class="rounded bg-yellow-light text-black p-1">#FFF382</td>
+                        <td class="rounded border border-yellow-light p-1">.border-yellow-light</span>
+                        </td>
+                        <td class="rounded text-yellow-light p-1">.text-yellow-light</span>
+                        </td>
+                        <td class="rounded bg-black text-yellow-light p-1">.text-yellow-light</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-yellow text-black p-1">.bg-yellow</td>
+                        <td class="rounded bg-yellow text-black p-1">#FFED4A</td>
+                        <td class="rounded border border-yellow p-1">.border-yellow</span>
+                        </td>
+                        <td class="rounded text-yellow p-1">.text-yellow</span>
+                        </td>
+                        <td class="rounded bg-black text-yellow p-1">.text-yellow</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-yellow-dark text-white p-1">.bg-yellow-dark</td>
+                        <td class="rounded bg-yellow-dark text-white p-1">#F2D024</td>
+                        <td class="rounded border border-yellow-dark p-1">.border-yellow-dark</span>
+                        </td>
+                        <td class="rounded text-yellow-dark p-1">.text-yellow-dark</span>
+                        </td>
+                        <td class="rounded bg-black text-yellow-dark p-1">.text-yellow-dark</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-yellow-darker text-white p-1">.bg-yellow-darker</td>
+                        <td class="rounded bg-yellow-darker text-white p-1">#684F1D</td>
+                        <td class="rounded border border-yellow-darker p-1">.border-yellow-darker</span>
+                        </td>
+                        <td class="rounded text-yellow-darker p-1">.text-yellow-darker</span>
+                        </td>
+                        <td class="rounded bg-black text-yellow-darker p-1">.text-yellow-darker</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-yellow-darkest text-white p-1">.bg-yellow-darkest</td>
+                        <td class="rounded bg-yellow-darkest text-white p-1">#453411</td>
+                        <td class="rounded border border-yellow-darkest p-1">.border-yellow-darkest</span>
+                        </td>
+                        <td class="rounded text-yellow-darkest p-1">.text-yellow-darkest</span>
+                        </td>
+                        <td class="rounded bg-black text-yellow-darkest p-1">.text-yellow-darkest</span>
+                        </td>
+                    </tr>
 
 
-                <!------------------------ teal ------------------------>
-                <tr>
-                    <td class="rounded bg-teal-lightest text-black p-1">.bg-teal-lightest</td>
-                    <td class="rounded bg-teal-lightest text-black p-1">#E8FFFE</td>
-                    <td class="rounded border border-teal-lightest p-1">.border-teal-lightest</span>
-                    </td>
-                    <td class="rounded text-teal-lightest p-1">.text-teal-lightest</span>
-                    </td>
-                    <td class="rounded bg-black text-teal-lightest p-1">.text-teal-lightest</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-teal-lighter text-black p-1">.bg-teal-lighter</td>
-                    <td class="rounded bg-teal-lighter text-black p-1">#A0F0ED</td>
-                    <td class="rounded border border-teal-lighter p-1">.border-teal-lighter</span>
-                    </td>
-                    <td class="rounded text-teal-lighter p-1">.text-teal-lighter</span>
-                    </td>
-                    <td class="rounded bg-black text-teal-lighter p-1">.text-teal-lighter</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-teal-light text-black p-1">.bg-teal-light</td>
-                    <td class="rounded bg-teal-light text-black p-1">#64D5CA</td>
-                    <td class="rounded border border-teal-light p-1">.border-teal-light</span>
-                    </td>
-                    <td class="rounded text-teal-light p-1">.text-teal-light</span>
-                    </td>
-                    <td class="rounded bg-black text-teal-light p-1">.text-teal-light</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-teal text-black p-1">.bg-teal</td>
-                    <td class="rounded bg-teal text-black p-1">#4DC0B5</td>
-                    <td class="rounded border border-teal p-1">.border-teal</span>
-                    </td>
-                    <td class="rounded text-teal p-1">.text-teal</span>
-                    </td>
-                    <td class="rounded bg-black text-teal p-1">.text-teal</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-teal-dark text-white p-1">.bg-teal-dark</td>
-                    <td class="rounded bg-teal-dark text-white p-1">#38A89D</td>
-                    <td class="rounded border border-teal-dark p-1">.border-teal-dark</span>
-                    </td>
-                    <td class="rounded text-teal-dark p-1">.text-teal-dark</span>
-                    </td>
-                    <td class="rounded bg-black text-teal-dark p-1">.text-teal-dark</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-teal-darker text-white p-1">.bg-teal-darker</td>
-                    <td class="rounded bg-teal-darker text-white p-1">#20504F</td>
-                    <td class="rounded border border-teal-darker p-1">.border-teal-darker</span>
-                    </td>
-                    <td class="rounded text-teal-darker p-1">.text-teal-darker</span>
-                    </td>
-                    <td class="rounded bg-black text-teal-darker p-1">.text-teal-darker</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-teal-darkest text-white p-1">.bg-teal-darkest</td>
-                    <td class="rounded bg-teal-darkest text-white p-1">#0D3331</td>
-                    <td class="rounded border border-teal-darkest p-1">.border-teal-darkest</span>
-                    </td>
-                    <td class="rounded text-teal-darkest p-1">.text-teal-darkest</span>
-                    </td>
-                    <td class="rounded bg-black text-teal-darkest p-1">.text-teal-darkest</span>
-                    </td>
-                </tr>
+                    <!------------------------ green ------------------------>
+                    <tr>
+                        <td class="rounded bg-green-lightest text-black p-1">.bg-green-lightest</td>
+                        <td class="rounded bg-green-lightest text-black p-1">#E3FCEC</td>
+                        <td class="rounded border border-green-lightest p-1">.border-green-lightest</span>
+                        </td>
+                        <td class="rounded text-green-lightest p-1">.text-green-lightest</span>
+                        </td>
+                        <td class="rounded bg-black text-green-lightest p-1">.text-green-lightest</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-green-lighter text-black p-1">.bg-green-lighter</td>
+                        <td class="rounded bg-green-lighter text-black p-1">#A2F5BF</td>
+                        <td class="rounded border border-green-lighter p-1">.border-green-lighter</span>
+                        </td>
+                        <td class="rounded text-green-lighter p-1">.text-green-lighter</span>
+                        </td>
+                        <td class="rounded bg-black text-green-lighter p-1">.text-green-lighter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-green-light text-black p-1">.bg-green-light</td>
+                        <td class="rounded bg-green-light text-black p-1">#51D88A</td>
+                        <td class="rounded border border-green-light p-1">.border-green-light</span>
+                        </td>
+                        <td class="rounded text-green-light p-1">.text-green-light</span>
+                        </td>
+                        <td class="rounded bg-black text-green-light p-1">.text-green-light</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-green text-black p-1">.bg-green</td>
+                        <td class="rounded bg-green text-black p-1">#38C172</td>
+                        <td class="rounded border border-green p-1">.border-green</span>
+                        </td>
+                        <td class="rounded text-green p-1">.text-green</span>
+                        </td>
+                        <td class="rounded bg-black text-green p-1">.text-green</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-green-dark text-white p-1">.bg-green-dark</td>
+                        <td class="rounded bg-green-dark text-white p-1">#1F9D55</td>
+                        <td class="rounded border border-green-dark p-1">.border-green-dark</span>
+                        </td>
+                        <td class="rounded text-green-dark p-1">.text-green-dark</span>
+                        </td>
+                        <td class="rounded bg-black text-green-dark p-1">.text-green-dark</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-green-darker text-white p-1">.bg-green-darker</td>
+                        <td class="rounded bg-green-darker text-white p-1">#1A4731</td>
+                        <td class="rounded border border-green-darker p-1">.border-green-darker</span>
+                        </td>
+                        <td class="rounded text-green-darker p-1">.text-green-darker</span>
+                        </td>
+                        <td class="rounded bg-black text-green-darker p-1">.text-green-darker</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-green-darkest text-white p-1">.bg-green-darkest</td>
+                        <td class="rounded bg-green-darkest text-white p-1">#0F2F21</td>
+                        <td class="rounded border border-green-darkest p-1">.border-green-darkest</span>
+                        </td>
+                        <td class="rounded text-green-darkest p-1">.text-green-darkest</span>
+                        </td>
+                        <td class="rounded bg-black text-green-darkest p-1">.text-green-darkest</span>
+                        </td>
+                    </tr>
 
 
-                <!------------------------ blue ------------------------>
-                <tr>
-                    <td class="rounded bg-blue-lightest text-black p-1">.bg-blue-lightest</td>
-                    <td class="rounded bg-blue-lightest text-black p-1">#EFF8FF</td>
-                    <td class="rounded border border-blue-lightest p-1">.border-blue-lightest</span>
-                    </td>
-                    <td class="rounded text-blue-lightest p-1">.text-blue-lightest</span>
-                    </td>
-                    <td class="rounded bg-black text-blue-lightest p-1">.text-blue-lightest</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-blue-lighter text-black p-1">.bg-blue-lighter</td>
-                    <td class="rounded bg-blue-lighter text-black p-1">#BCDEFA</td>
-                    <td class="rounded border border-blue-lighter p-1">.border-blue-lighter</span>
-                    </td>
-                    <td class="rounded text-blue-lighter p-1">.text-blue-lighter</span>
-                    </td>
-                    <td class="rounded bg-black text-blue-lighter p-1">.text-blue-lighter</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-blue-light text-black p-1">.bg-blue-light</td>
-                    <td class="rounded bg-blue-light text-black p-1">#6CB2EB</td>
-                    <td class="rounded border border-blue-light p-1">.border-blue-light</span>
-                    </td>
-                    <td class="rounded text-blue-light p-1">.text-blue-light</span>
-                    </td>
-                    <td class="rounded bg-black text-blue-light p-1">.text-blue-light</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-blue text-black p-1">.bg-blue</td>
-                    <td class="rounded bg-blue text-black p-1">#3490DC</td>
-                    <td class="rounded border border-blue p-1">.border-blue</span>
-                    </td>
-                    <td class="rounded text-blue p-1">.text-blue</span>
-                    </td>
-                    <td class="rounded bg-black text-blue p-1">.text-blue</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-blue-dark text-white p-1">.bg-blue-dark</td>
-                    <td class="rounded bg-blue-dark text-white p-1">#2779BD</td>
-                    <td class="rounded border border-blue-dark p-1">.border-blue-dark</span>
-                    </td>
-                    <td class="rounded text-blue-dark p-1">.text-blue-dark</span>
-                    </td>
-                    <td class="rounded bg-black text-blue-dark p-1">.text-blue-dark</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-blue-darker text-white p-1">.bg-blue-darker</td>
-                    <td class="rounded bg-blue-darker text-white p-1">#1C3D5A</td>
-                    <td class="rounded border border-blue-darker p-1">.border-blue-darker</span>
-                    </td>
-                    <td class="rounded text-blue-darker p-1">.text-blue-darker</span>
-                    </td>
-                    <td class="rounded bg-black text-blue-darker p-1">.text-blue-darker</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-blue-darkest text-white p-1">.bg-blue-darkest</td>
-                    <td class="rounded bg-blue-darkest text-white p-1">#12283A</td>
-                    <td class="rounded border border-blue-darkest p-1">.border-blue-darkest</span>
-                    </td>
-                    <td class="rounded text-blue-darkest p-1">.text-blue-darkest</span>
-                    </td>
-                    <td class="rounded bg-black text-blue-darkest p-1">.text-blue-darkest</span>
-                    </td>
-                </tr>
+                    <!------------------------ teal ------------------------>
+                    <tr>
+                        <td class="rounded bg-teal-lightest text-black p-1">.bg-teal-lightest</td>
+                        <td class="rounded bg-teal-lightest text-black p-1">#E8FFFE</td>
+                        <td class="rounded border border-teal-lightest p-1">.border-teal-lightest</span>
+                        </td>
+                        <td class="rounded text-teal-lightest p-1">.text-teal-lightest</span>
+                        </td>
+                        <td class="rounded bg-black text-teal-lightest p-1">.text-teal-lightest</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-teal-lighter text-black p-1">.bg-teal-lighter</td>
+                        <td class="rounded bg-teal-lighter text-black p-1">#A0F0ED</td>
+                        <td class="rounded border border-teal-lighter p-1">.border-teal-lighter</span>
+                        </td>
+                        <td class="rounded text-teal-lighter p-1">.text-teal-lighter</span>
+                        </td>
+                        <td class="rounded bg-black text-teal-lighter p-1">.text-teal-lighter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-teal-light text-black p-1">.bg-teal-light</td>
+                        <td class="rounded bg-teal-light text-black p-1">#64D5CA</td>
+                        <td class="rounded border border-teal-light p-1">.border-teal-light</span>
+                        </td>
+                        <td class="rounded text-teal-light p-1">.text-teal-light</span>
+                        </td>
+                        <td class="rounded bg-black text-teal-light p-1">.text-teal-light</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-teal text-black p-1">.bg-teal</td>
+                        <td class="rounded bg-teal text-black p-1">#4DC0B5</td>
+                        <td class="rounded border border-teal p-1">.border-teal</span>
+                        </td>
+                        <td class="rounded text-teal p-1">.text-teal</span>
+                        </td>
+                        <td class="rounded bg-black text-teal p-1">.text-teal</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-teal-dark text-white p-1">.bg-teal-dark</td>
+                        <td class="rounded bg-teal-dark text-white p-1">#38A89D</td>
+                        <td class="rounded border border-teal-dark p-1">.border-teal-dark</span>
+                        </td>
+                        <td class="rounded text-teal-dark p-1">.text-teal-dark</span>
+                        </td>
+                        <td class="rounded bg-black text-teal-dark p-1">.text-teal-dark</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-teal-darker text-white p-1">.bg-teal-darker</td>
+                        <td class="rounded bg-teal-darker text-white p-1">#20504F</td>
+                        <td class="rounded border border-teal-darker p-1">.border-teal-darker</span>
+                        </td>
+                        <td class="rounded text-teal-darker p-1">.text-teal-darker</span>
+                        </td>
+                        <td class="rounded bg-black text-teal-darker p-1">.text-teal-darker</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-teal-darkest text-white p-1">.bg-teal-darkest</td>
+                        <td class="rounded bg-teal-darkest text-white p-1">#0D3331</td>
+                        <td class="rounded border border-teal-darkest p-1">.border-teal-darkest</span>
+                        </td>
+                        <td class="rounded text-teal-darkest p-1">.text-teal-darkest</span>
+                        </td>
+                        <td class="rounded bg-black text-teal-darkest p-1">.text-teal-darkest</span>
+                        </td>
+                    </tr>
 
 
-
-                <!------------------------ indigo ------------------------>
-                <tr>
-                    <td class="rounded bg-indigo-lightest text-black p-1">.bg-indigo-lightest</td>
-                    <td class="rounded bg-indigo-lightest text-black p-1">#E6E8FF</td>
-                    <td class="rounded border border-indigo-lightest p-1">.border-indigo-lightest</span>
-                    </td>
-                    <td class="rounded text-indigo-lightest p-1">.text-indigo-lightest</span>
-                    </td>
-                    <td class="rounded bg-black text-indigo-lightest p-1">.text-indigo-lightest</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-indigo-lighter text-black p-1">.bg-indigo-lighter</td>
-                    <td class="rounded bg-indigo-lighter text-black p-1">#B2B7FF</td>
-                    <td class="rounded border border-indigo-lighter p-1">.border-indigo-lighter</span>
-                    </td>
-                    <td class="rounded text-indigo-lighter p-1">.text-indigo-lighter</span>
-                    </td>
-                    <td class="rounded bg-black text-indigo-lighter p-1">.text-indigo-lighter</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-indigo-light text-black p-1">.bg-indigo-light</td>
-                    <td class="rounded bg-indigo-light text-black p-1">#7886D7</td>
-                    <td class="rounded border border-indigo-light p-1">.border-indigo-light</span>
-                    </td>
-                    <td class="rounded text-indigo-light p-1">.text-indigo-light</span>
-                    </td>
-                    <td class="rounded bg-black text-indigo-light p-1">.text-indigo-light</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-indigo text-black p-1">.bg-indigo</td>
-                    <td class="rounded bg-indigo text-black p-1">#6574CD</td>
-                    <td class="rounded border border-indigo p-1">.border-indigo</span>
-                    </td>
-                    <td class="rounded text-indigo p-1">.text-indigo</span>
-                    </td>
-                    <td class="rounded bg-black text-indigo p-1">.text-indigo</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-indigo-dark text-white p-1">.bg-indigo-dark</td>
-                    <td class="rounded bg-indigo-dark text-white p-1">#5661B3</td>
-                    <td class="rounded border border-indigo-dark p-1">.border-indigo-dark</span>
-                    </td>
-                    <td class="rounded text-indigo-dark p-1">.text-indigo-dark</span>
-                    </td>
-                    <td class="rounded bg-black text-indigo-dark p-1">.text-indigo-dark</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-indigo-darker text-white p-1">.bg-indigo-darker</td>
-                    <td class="rounded bg-indigo-darker text-white p-1">#2F365F</td>
-                    <td class="rounded border border-indigo-darker p-1">.border-indigo-darker</span>
-                    </td>
-                    <td class="rounded text-indigo-darker p-1">.text-indigo-darker</span>
-                    </td>
-                    <td class="rounded bg-black text-indigo-darker p-1">.text-indigo-darker</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-indigo-darkest text-white p-1">.bg-indigo-darkest</td>
-                    <td class="rounded bg-indigo-darkest text-white p-1">#191E38</td>
-                    <td class="rounded border border-indigo-darkest p-1">.border-indigo-darkest</span>
-                    </td>
-                    <td class="rounded text-indigo-darkest p-1">.text-indigo-darkest</span>
-                    </td>
-                    <td class="rounded bg-black text-indigo-darkest p-1">.text-indigo-darkest</span>
-                    </td>
-                </tr>
+                    <!------------------------ blue ------------------------>
+                    <tr>
+                        <td class="rounded bg-blue-lightest text-black p-1">.bg-blue-lightest</td>
+                        <td class="rounded bg-blue-lightest text-black p-1">#EFF8FF</td>
+                        <td class="rounded border border-blue-lightest p-1">.border-blue-lightest</span>
+                        </td>
+                        <td class="rounded text-blue-lightest p-1">.text-blue-lightest</span>
+                        </td>
+                        <td class="rounded bg-black text-blue-lightest p-1">.text-blue-lightest</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-blue-lighter text-black p-1">.bg-blue-lighter</td>
+                        <td class="rounded bg-blue-lighter text-black p-1">#BCDEFA</td>
+                        <td class="rounded border border-blue-lighter p-1">.border-blue-lighter</span>
+                        </td>
+                        <td class="rounded text-blue-lighter p-1">.text-blue-lighter</span>
+                        </td>
+                        <td class="rounded bg-black text-blue-lighter p-1">.text-blue-lighter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-blue-light text-black p-1">.bg-blue-light</td>
+                        <td class="rounded bg-blue-light text-black p-1">#6CB2EB</td>
+                        <td class="rounded border border-blue-light p-1">.border-blue-light</span>
+                        </td>
+                        <td class="rounded text-blue-light p-1">.text-blue-light</span>
+                        </td>
+                        <td class="rounded bg-black text-blue-light p-1">.text-blue-light</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-blue text-black p-1">.bg-blue</td>
+                        <td class="rounded bg-blue text-black p-1">#3490DC</td>
+                        <td class="rounded border border-blue p-1">.border-blue</span>
+                        </td>
+                        <td class="rounded text-blue p-1">.text-blue</span>
+                        </td>
+                        <td class="rounded bg-black text-blue p-1">.text-blue</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-blue-dark text-white p-1">.bg-blue-dark</td>
+                        <td class="rounded bg-blue-dark text-white p-1">#2779BD</td>
+                        <td class="rounded border border-blue-dark p-1">.border-blue-dark</span>
+                        </td>
+                        <td class="rounded text-blue-dark p-1">.text-blue-dark</span>
+                        </td>
+                        <td class="rounded bg-black text-blue-dark p-1">.text-blue-dark</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-blue-darker text-white p-1">.bg-blue-darker</td>
+                        <td class="rounded bg-blue-darker text-white p-1">#1C3D5A</td>
+                        <td class="rounded border border-blue-darker p-1">.border-blue-darker</span>
+                        </td>
+                        <td class="rounded text-blue-darker p-1">.text-blue-darker</span>
+                        </td>
+                        <td class="rounded bg-black text-blue-darker p-1">.text-blue-darker</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-blue-darkest text-white p-1">.bg-blue-darkest</td>
+                        <td class="rounded bg-blue-darkest text-white p-1">#12283A</td>
+                        <td class="rounded border border-blue-darkest p-1">.border-blue-darkest</span>
+                        </td>
+                        <td class="rounded text-blue-darkest p-1">.text-blue-darkest</span>
+                        </td>
+                        <td class="rounded bg-black text-blue-darkest p-1">.text-blue-darkest</span>
+                        </td>
+                    </tr>
 
 
 
-                <!------------------------ purple ------------------------>
-                <tr>
-                    <td class="rounded bg-purple-lightest text-black p-1">.bg-purple-lightest</td>
-                    <td class="rounded bg-purple-lightest text-black p-1">#F3EBFF</td>
-                    <td class="rounded border border-purple-lightest p-1">.border-purple-lightest</span>
-                    </td>
-                    <td class="rounded text-purple-lightest p-1">.text-purple-lightest</span>
-                    </td>
-                    <td class="rounded bg-black text-purple-lightest p-1">.text-purple-lightest</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-purple-lighter text-black p-1">.bg-purple-lighter</td>
-                    <td class="rounded bg-purple-lighter text-black p-1">#F3EBFF</td>
-                    <td class="rounded border border-purple-lighter p-1">.border-purple-lighter</span>
-                    </td>
-                    <td class="rounded text-purple-lighter p-1">.text-purple-lighter</span>
-                    </td>
-                    <td class="rounded bg-black text-purple-lighter p-1">.text-purple-lighter</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-purple-light text-black p-1">.bg-purple-light</td>
-                    <td class="rounded bg-purple-light text-black p-1">#A779E9</td>
-                    <td class="rounded border border-purple-light p-1">.border-purple-light</span>
-                    </td>
-                    <td class="rounded text-purple-light p-1">.text-purple-light</span>
-                    </td>
-                    <td class="rounded bg-black text-purple-light p-1">.text-purple-light</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-purple text-black p-1">.bg-purple</td>
-                    <td class="rounded bg-purple text-black p-1">#9561E2</td>
-                    <td class="rounded border border-purple p-1">.border-purple</span>
-                    </td>
-                    <td class="rounded text-purple p-1">.text-purple</span>
-                    </td>
-                    <td class="rounded bg-black text-purple p-1">.text-purple</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-purple-dark text-white p-1">.bg-purple-dark</td>
-                    <td class="rounded bg-purple-dark text-white p-1">#794ACF</td>
-                    <td class="rounded border border-purple-dark p-1">.border-purple-dark</span>
-                    </td>
-                    <td class="rounded text-purple-dark p-1">.text-purple-dark</span>
-                    </td>
-                    <td class="rounded bg-black text-purple-dark p-1">.text-purple-dark</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-purple-darker text-white p-1">.bg-purple-darker</td>
-                    <td class="rounded bg-purple-darker text-white p-1">#382B5F</td>
-                    <td class="rounded border border-purple-darker p-1">.border-purple-darker</span>
-                    </td>
-                    <td class="rounded text-purple-darker p-1">.text-purple-darker</span>
-                    </td>
-                    <td class="rounded bg-black text-purple-darker p-1">.text-purple-darker</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-purple-darkest text-white p-1">.bg-purple-darkest</td>
-                    <td class="rounded bg-purple-darkest text-white p-1">#21183C</td>
-                    <td class="rounded border border-purple-darkest p-1">.border-purple-darkest</span>
-                    </td>
-                    <td class="rounded text-purple-darkest p-1">.text-purple-darkest</span>
-                    </td>
-                    <td class="rounded bg-black text-purple-darkest p-1">.text-purple-darkest</span>
-                    </td>
-                </tr>
+                    <!------------------------ indigo ------------------------>
+                    <tr>
+                        <td class="rounded bg-indigo-lightest text-black p-1">.bg-indigo-lightest</td>
+                        <td class="rounded bg-indigo-lightest text-black p-1">#E6E8FF</td>
+                        <td class="rounded border border-indigo-lightest p-1">.border-indigo-lightest</span>
+                        </td>
+                        <td class="rounded text-indigo-lightest p-1">.text-indigo-lightest</span>
+                        </td>
+                        <td class="rounded bg-black text-indigo-lightest p-1">.text-indigo-lightest</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-indigo-lighter text-black p-1">.bg-indigo-lighter</td>
+                        <td class="rounded bg-indigo-lighter text-black p-1">#B2B7FF</td>
+                        <td class="rounded border border-indigo-lighter p-1">.border-indigo-lighter</span>
+                        </td>
+                        <td class="rounded text-indigo-lighter p-1">.text-indigo-lighter</span>
+                        </td>
+                        <td class="rounded bg-black text-indigo-lighter p-1">.text-indigo-lighter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-indigo-light text-black p-1">.bg-indigo-light</td>
+                        <td class="rounded bg-indigo-light text-black p-1">#7886D7</td>
+                        <td class="rounded border border-indigo-light p-1">.border-indigo-light</span>
+                        </td>
+                        <td class="rounded text-indigo-light p-1">.text-indigo-light</span>
+                        </td>
+                        <td class="rounded bg-black text-indigo-light p-1">.text-indigo-light</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-indigo text-black p-1">.bg-indigo</td>
+                        <td class="rounded bg-indigo text-black p-1">#6574CD</td>
+                        <td class="rounded border border-indigo p-1">.border-indigo</span>
+                        </td>
+                        <td class="rounded text-indigo p-1">.text-indigo</span>
+                        </td>
+                        <td class="rounded bg-black text-indigo p-1">.text-indigo</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-indigo-dark text-white p-1">.bg-indigo-dark</td>
+                        <td class="rounded bg-indigo-dark text-white p-1">#5661B3</td>
+                        <td class="rounded border border-indigo-dark p-1">.border-indigo-dark</span>
+                        </td>
+                        <td class="rounded text-indigo-dark p-1">.text-indigo-dark</span>
+                        </td>
+                        <td class="rounded bg-black text-indigo-dark p-1">.text-indigo-dark</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-indigo-darker text-white p-1">.bg-indigo-darker</td>
+                        <td class="rounded bg-indigo-darker text-white p-1">#2F365F</td>
+                        <td class="rounded border border-indigo-darker p-1">.border-indigo-darker</span>
+                        </td>
+                        <td class="rounded text-indigo-darker p-1">.text-indigo-darker</span>
+                        </td>
+                        <td class="rounded bg-black text-indigo-darker p-1">.text-indigo-darker</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-indigo-darkest text-white p-1">.bg-indigo-darkest</td>
+                        <td class="rounded bg-indigo-darkest text-white p-1">#191E38</td>
+                        <td class="rounded border border-indigo-darkest p-1">.border-indigo-darkest</span>
+                        </td>
+                        <td class="rounded text-indigo-darkest p-1">.text-indigo-darkest</span>
+                        </td>
+                        <td class="rounded bg-black text-indigo-darkest p-1">.text-indigo-darkest</span>
+                        </td>
+                    </tr>
 
 
 
-                <!------------------------ pink ------------------------>
-                <tr>
-                    <td class="rounded bg-pink-lightest text-black p-1">.bg-pink-lightest</td>
-                    <td class="rounded bg-pink-lightest text-black p-1">#FFEBEF</td>
-                    <td class="rounded border border-pink-lightest p-1">.border-pink-lightest</span>
-                    </td>
-                    <td class="rounded text-pink-lightest p-1">.text-pink-lightest</span>
-                    </td>
-                    <td class="rounded bg-black text-pink-lightest p-1">.text-pink-lightest</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-pink-lighter text-black p-1">.bg-pink-lighter</td>
-                    <td class="rounded bg-pink-lighter text-black p-1">#FFBBCA</td>
-                    <td class="rounded border border-pink-lighter p-1">.border-pink-lighter</span>
-                    </td>
-                    <td class="rounded text-pink-lighter p-1">.text-pink-lighter</span>
-                    </td>
-                    <td class="rounded bg-black text-pink-lighter p-1">.text-pink-lighter</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-pink-light text-black p-1">.bg-pink-light</td>
-                    <td class="rounded bg-pink-light text-black p-1">#FA7EA8</td>
-                    <td class="rounded border border-pink-light p-1">.border-pink-light</span>
-                    </td>
-                    <td class="rounded text-pink-light p-1">.text-pink-light</span>
-                    </td>
-                    <td class="rounded bg-black text-pink-light p-1">.text-pink-light</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-pink text-black p-1">.bg-pink</td>
-                    <td class="rounded bg-pink text-black p-1">#F66D9B</td>
-                    <td class="rounded border border-pink p-1">.border-pink</span>
-                    </td>
-                    <td class="rounded text-pink p-1">.text-pink</span>
-                    </td>
-                    <td class="rounded bg-black text-pink p-1">.text-pink</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-pink-dark text-white p-1">.bg-pink-dark</td>
-                    <td class="rounded bg-pink-dark text-white p-1">#EB5286</td>
-                    <td class="rounded border border-pink-dark p-1">.border-pink-dark</span>
-                    </td>
-                    <td class="rounded text-pink-dark p-1">.text-pink-dark</span>
-                    </td>
-                    <td class="rounded bg-black text-pink-dark p-1">.text-pink-dark</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-pink-darker text-white p-1">.bg-pink-darker</td>
-                    <td class="rounded bg-pink-darker text-white p-1">#6F213F</td>
-                    <td class="rounded border border-pink-darker p-1">.border-pink-darker</span>
-                    </td>
-                    <td class="rounded text-pink-darker p-1">.text-pink-darker</span>
-                    </td>
-                    <td class="rounded bg-black text-pink-darker p-1">.text-pink-darker</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="rounded bg-pink-darkest text-white p-1">.bg-pink-darkest</td>
-                    <td class="rounded bg-pink-darkest text-white p-1">#451225</td>
-                    <td class="rounded border border-pink-darkest p-1">.border-pink-darkest</span>
-                    </td>
-                    <td class="rounded text-pink-darkest p-1">.text-pink-darkest</span>
-                    </td>
-                    <td class="rounded bg-black text-pink-darkest p-1">.text-pink-darkest</span>
-                    </td>
-                </tr>
+                    <!------------------------ purple ------------------------>
+                    <tr>
+                        <td class="rounded bg-purple-lightest text-black p-1">.bg-purple-lightest</td>
+                        <td class="rounded bg-purple-lightest text-black p-1">#F3EBFF</td>
+                        <td class="rounded border border-purple-lightest p-1">.border-purple-lightest</span>
+                        </td>
+                        <td class="rounded text-purple-lightest p-1">.text-purple-lightest</span>
+                        </td>
+                        <td class="rounded bg-black text-purple-lightest p-1">.text-purple-lightest</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-purple-lighter text-black p-1">.bg-purple-lighter</td>
+                        <td class="rounded bg-purple-lighter text-black p-1">#F3EBFF</td>
+                        <td class="rounded border border-purple-lighter p-1">.border-purple-lighter</span>
+                        </td>
+                        <td class="rounded text-purple-lighter p-1">.text-purple-lighter</span>
+                        </td>
+                        <td class="rounded bg-black text-purple-lighter p-1">.text-purple-lighter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-purple-light text-black p-1">.bg-purple-light</td>
+                        <td class="rounded bg-purple-light text-black p-1">#A779E9</td>
+                        <td class="rounded border border-purple-light p-1">.border-purple-light</span>
+                        </td>
+                        <td class="rounded text-purple-light p-1">.text-purple-light</span>
+                        </td>
+                        <td class="rounded bg-black text-purple-light p-1">.text-purple-light</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-purple text-black p-1">.bg-purple</td>
+                        <td class="rounded bg-purple text-black p-1">#9561E2</td>
+                        <td class="rounded border border-purple p-1">.border-purple</span>
+                        </td>
+                        <td class="rounded text-purple p-1">.text-purple</span>
+                        </td>
+                        <td class="rounded bg-black text-purple p-1">.text-purple</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-purple-dark text-white p-1">.bg-purple-dark</td>
+                        <td class="rounded bg-purple-dark text-white p-1">#794ACF</td>
+                        <td class="rounded border border-purple-dark p-1">.border-purple-dark</span>
+                        </td>
+                        <td class="rounded text-purple-dark p-1">.text-purple-dark</span>
+                        </td>
+                        <td class="rounded bg-black text-purple-dark p-1">.text-purple-dark</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-purple-darker text-white p-1">.bg-purple-darker</td>
+                        <td class="rounded bg-purple-darker text-white p-1">#382B5F</td>
+                        <td class="rounded border border-purple-darker p-1">.border-purple-darker</span>
+                        </td>
+                        <td class="rounded text-purple-darker p-1">.text-purple-darker</span>
+                        </td>
+                        <td class="rounded bg-black text-purple-darker p-1">.text-purple-darker</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-purple-darkest text-white p-1">.bg-purple-darkest</td>
+                        <td class="rounded bg-purple-darkest text-white p-1">#21183C</td>
+                        <td class="rounded border border-purple-darkest p-1">.border-purple-darkest</span>
+                        </td>
+                        <td class="rounded text-purple-darkest p-1">.text-purple-darkest</span>
+                        </td>
+                        <td class="rounded bg-black text-purple-darkest p-1">.text-purple-darkest</span>
+                        </td>
+                    </tr>
 
 
-            </tbody>
 
-        </table>
+                    <!------------------------ pink ------------------------>
+                    <tr>
+                        <td class="rounded bg-pink-lightest text-black p-1">.bg-pink-lightest</td>
+                        <td class="rounded bg-pink-lightest text-black p-1">#FFEBEF</td>
+                        <td class="rounded border border-pink-lightest p-1">.border-pink-lightest</span>
+                        </td>
+                        <td class="rounded text-pink-lightest p-1">.text-pink-lightest</span>
+                        </td>
+                        <td class="rounded bg-black text-pink-lightest p-1">.text-pink-lightest</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-pink-lighter text-black p-1">.bg-pink-lighter</td>
+                        <td class="rounded bg-pink-lighter text-black p-1">#FFBBCA</td>
+                        <td class="rounded border border-pink-lighter p-1">.border-pink-lighter</span>
+                        </td>
+                        <td class="rounded text-pink-lighter p-1">.text-pink-lighter</span>
+                        </td>
+                        <td class="rounded bg-black text-pink-lighter p-1">.text-pink-lighter</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-pink-light text-black p-1">.bg-pink-light</td>
+                        <td class="rounded bg-pink-light text-black p-1">#FA7EA8</td>
+                        <td class="rounded border border-pink-light p-1">.border-pink-light</span>
+                        </td>
+                        <td class="rounded text-pink-light p-1">.text-pink-light</span>
+                        </td>
+                        <td class="rounded bg-black text-pink-light p-1">.text-pink-light</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-pink text-black p-1">.bg-pink</td>
+                        <td class="rounded bg-pink text-black p-1">#F66D9B</td>
+                        <td class="rounded border border-pink p-1">.border-pink</span>
+                        </td>
+                        <td class="rounded text-pink p-1">.text-pink</span>
+                        </td>
+                        <td class="rounded bg-black text-pink p-1">.text-pink</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-pink-dark text-white p-1">.bg-pink-dark</td>
+                        <td class="rounded bg-pink-dark text-white p-1">#EB5286</td>
+                        <td class="rounded border border-pink-dark p-1">.border-pink-dark</span>
+                        </td>
+                        <td class="rounded text-pink-dark p-1">.text-pink-dark</span>
+                        </td>
+                        <td class="rounded bg-black text-pink-dark p-1">.text-pink-dark</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-pink-darker text-white p-1">.bg-pink-darker</td>
+                        <td class="rounded bg-pink-darker text-white p-1">#6F213F</td>
+                        <td class="rounded border border-pink-darker p-1">.border-pink-darker</span>
+                        </td>
+                        <td class="rounded text-pink-darker p-1">.text-pink-darker</span>
+                        </td>
+                        <td class="rounded bg-black text-pink-darker p-1">.text-pink-darker</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rounded bg-pink-darkest text-white p-1">.bg-pink-darkest</td>
+                        <td class="rounded bg-pink-darkest text-white p-1">#451225</td>
+                        <td class="rounded border border-pink-darkest p-1">.border-pink-darkest</span>
+                        </td>
+                        <td class="rounded text-pink-darkest p-1">.text-pink-darkest</span>
+                        </td>
+                        <td class="rounded bg-black text-pink-darkest p-1">.text-pink-darkest</span>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+
+            </table>
 
     </div>
 
