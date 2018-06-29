@@ -3,6 +3,7 @@
 <head>
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -66,6 +67,18 @@
             <a href="#align-items">align-items</a>,
             <a href="#align-content">align-content</a>,
             <a href="#align-self">align-self</a>,
+
+            <!------------------------ Layout ------------------------>
+
+            <a class="font-bold" href="#layout">Layout</a>
+            <a href="#container">container</a>
+            <a href="#display">display</a>
+            <a href="#floats">floats</a>
+            <a href="#overflow">overflow</a>
+            <a href="#position">position</a>
+            <a href="#visibility">visibility</a>
+            <a href="#z-index">z-index</a>
+            <a href="#breakpoint"
 
             <!------------------------ Typography ------------------------>
             <a class="font-bold" href="#typography">Typography</a>,
@@ -431,6 +444,318 @@
 
         </div>
 
+
+
+
+        <h2 id="layout" class="my-4">Layout</h2>
+
+        <div class="w-full flex flex-col">
+
+            <h4 id="container" class="my-4">
+                <a href="https://tailwindcss.com/docs/container">Container</a>
+            </h4>
+
+            <span class="container px-2 py-2 my-2 border rounded">.container</span>
+
+            <div class="flex">
+
+                <div class="flex-1 px-2">
+
+                    <h4 id="display" class="my-4">
+                        <a href="https://tailwindcss.com/docs/display">Display</a>
+                    </h4>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.block</p>
+                        <div class="bg-grey-lighter py-1">
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 block">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 block">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 block">3</div>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.inline-block</p>
+                        <div class="bg-grey-lighter">
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 inline-block">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 inline-block">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 inline-block">3</div>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.inline</p>
+                        <div class="bg-grey-lighter">
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 inline">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 inline">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 inline">3</div>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.hidden</p>
+                        <div class="bg-grey-lighter">
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 inline-block">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 hidden">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 inline-block">3</div>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <div class="table bg-grey-lighter p-2 rounded">.table
+                            <div class="table-row bg-grey-light">.table-row
+                                <div class="table-cell p-2">.table-cell</div>
+                                <div class="table-cell p-2">.table-cell</div>
+                                <div class="table-cell p-2">.table-cell</div>
+                            </div>
+                            <div class="table-row bg-grey-light">.table-row
+                                <div class="table-cell p-2">.table-cell</div>
+                                <div class="table-cell p-2">.table-cell</div>
+                                <div class="table-cell p-2">.table-cell</div>
+                            </div>
+                            <div class="table-row bg-grey-light">.table-row
+                                <div class="table-cell p-2">.table-cell</div>
+                                <div class="table-cell p-2">.table-cell</div>
+                                <div class="table-cell p-2">.table-cell</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 id="visibility" class="my-4">
+                        <a href="https://tailwindcss.com/docs/visibility">Visibility</a>
+                    </h4>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.visible</p>
+                        <div class="bg-grey-lighter">
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 inline-block">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey px-2 py-1 m-2 inline-block visible">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 inline-block">3</div>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.invisible</p>
+                        <div class="bg-grey-lighter">
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 inline-block">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey px-2 py-1 m-2 inline-block invisible">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 inline-block">3</div>
+                        </div>
+                    </div>
+
+                    <h4 id="z-index" class="my-4">
+                        <a href="https://tailwindcss.com/docs/z-index">Z-index</a>
+                    </h4>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">Hover boxes to change z-index</p>
+                        <div class="bg-grey-lightest flex relative p-2" style="height: 150px">
+                            <div class="z-box z-40 p-10 ml-0 mt-0 bg-grey-light absolute">.z-40</div>
+                            <div class="z-box z-30 p-10 ml-4 mt-2 bg-grey absolute">.z-30</div>
+                            <div class="z-box z-20 p-10 ml-8 mt-4 bg-grey-dark absolute">.z-20</div>
+                            <div class="z-box z-10 p-10 ml-12 mt-6 bg-grey-darker absolute">.z-10</div>
+                            <div class="z-box z-0 p-10 pr-12 ml-16 mt-8 bg-grey-darkest absolute">.z-0</div>
+                            <div class="z-bar z-auto bg-yellow p-4 w-full self-center text-right pointer-events-none"></div>
+                        </div>
+                    </div>
+
+                    <h4 id="breakpoint" class="my-4">
+                        <a href="https://tailwindcss.com/docs/responsive-design">Breakpoint Prefix</a>
+                    </h4>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+
+                            <p class="font-mono text-xs text-black mb-2">&ltdiv class="sm:text-red md:text-blue lg:text-yellow xl:text-teal"&gt ... &lt/div&gt</p>
+
+                        <div class="flex items-center mb-4 text-red">
+                            <svg width="23" height="48" viewBox="0 0 14 28" xmlns="http://www.w3.org/2000/svg" class="fill-current inline-block mx-0"><path d="M1.5 6h11A1.5 1.5 0 0 1 14 7.5v19a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 0 26.5v-19A1.5 1.5 0 0 1 1.5 6zM1 9v16h12V9H1zm6 18.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM7 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" fill-rule="evenodd"></path></svg>
+                            <p class="font-mono text-xs mt-2 ml-4">sm:text-red</p>
+                        </div>
+                        <div class="flex items-center mb-4 text-blue">
+                            <svg width="44" height="48" viewBox="0 0 26 28" xmlns="http://www.w3.org/2000/svg" class="fill-current inline-block mx-0"><path d="M26 26.5a1.5 1.5 0 0 1-1.5 1.5h-23A1.5 1.5 0 0 1 0 26.5v-14A1.5 1.5 0 0 1 1.5 11h23a1.5 1.5 0 0 1 1.5 1.5v14zm-3 .5V12H3v15h20zm1.5-6.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-23-.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" fill-rule="evenodd"></path></svg>
+                            <p class="font-mono text-xs mt-2 ml-4">md:text-blue</p>
+                        </div>
+                        <div class="flex items-center mb-4 text-yellow">
+                                <svg width="65" height="48" viewBox="0 0 38 28" xmlns="http://www.w3.org/2000/svg" class="fill-current inline-block mx-0"><path d="M34 26h4v1c-1.333.667-2.667 1-4 1H4c-1.333 0-2.667-.333-4-1v-1h4V7.5A1.5 1.5 0 0 1 5.5 6h27A1.5 1.5 0 0 1 34 7.5V26zM6 8v18h26V8H6z" fill-rule="evenodd"></path></svg>
+                            <p class="font-mono text-xs mt-2 ml-4">lg:text-yellow</p>
+                        </div>
+                        <div class="flex items-center mb-4 text-teal">
+                                <svg width="61.5" height="48" viewBox="0 0 36 28" xmlns="http://www.w3.org/2000/svg" class="fill-current inline-block mx-0"><path d="M20.857 24l.857 3H24v1H12v-1h2.286l.857-3H1.5A1.5 1.5 0 0 1 0 22.5v-21A1.5 1.5 0 0 1 1.5 0h33A1.5 1.5 0 0 1 36 1.5v21a1.5 1.5 0 0 1-1.5 1.5H20.857zM2 2v18h32V2H2z"></path></svg>
+                            <p class="font-mono text-xs mt-2 ml-4">xl:text-teal</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex-1 px-2">
+
+                    <h4 id="floats" class="my-4">
+                        <a href="https://tailwindcss.com/docs/floats">Floats</a>
+                    </h4>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.float-right</p>
+                        <div class="bg-grey-lighter">
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 float-right">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 float-right">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 float-right">3</div>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.float-left</p>
+                        <div class="bg-grey-lighter">
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 float-left">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 float-left">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 float-left">3</div>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.clearfix</p>
+                        <div class="bg-grey-light clearfix">
+                            <div class="text-grey-darker text-center text-xs bg-grey-lighter px-2 py-1 m-2 float-left">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-lighter px-2 py-1 m-2 float-left">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-lighter px-2 py-1 m-2 float-left">3</div>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.float-none</p>
+                        <div class="bg-grey-lighter">
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 float-none">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 float-none">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 float-none">3</div>
+                        </div>
+                    </div>
+
+                    <h4 id="position" class="my-4">
+                        <a href="https://tailwindcss.com/docs/positioning">Position</a>
+                    </h4>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.static</p>
+                        <div class="bg-grey-lighter">
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 static">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 static">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 static">3</div>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.fixed</p>
+                        <div class="bg-grey-lighter">
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 fixed">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 fixed">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 fixed">3</div>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.absolute</p>
+                        <div class="bg-grey-lighter">
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 absolute">1</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 absolute">2</div>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 absolute">3</div>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.sticky</p>
+                        <div class="bg-grey-lighter overflow-y-scroll h-32">
+                            <p class="px-2 my-2">scroll</p>
+                            <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 sticky pin-t">top: 0</div>
+                            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et viverra mauris. Nunc id consequat tortor, a tempor ante. In sed tempor ipsum. Mauris accumsan auctor nibh et hendrerit. Mauris nec faucibus leo. Nullam bibendum et lectus non viverra. Ut et laoreet est, in euismod magna. Quisque pellentesque lectus ac tincidunt scelerisque. Morbi vehicula sapien dui, a faucibus metus elementum a. Maecenas non lacinia neque. Curabitur efficitur enim a mauris placerat faucibus eu vel tellus. Pellentesque ornare sapien at massa volutpat sollicitudin. Curabitur pellentesque sodales elit, nec iaculis massa accumsan pharetra. Integer dictum mi id volutpat porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">Absolute positioning from center</p>
+                        <div class="bg-grey-lighter relative rounded flex items-center justify-center" style="height: 300px">
+                            <span class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 absolute pin-none">.pin-none</span>
+                            <span class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 absolute pin-t">.pin-t</span>
+                            <span class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 absolute pin-l">.pin-l</span>
+                            <span class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 absolute pin-r">.pin-r</span>
+                            <span class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 absolute pin-b">.pin-b</span>
+                            <span class="text-grey-darker text-center text-xs bg-grey px-2 py-1 m-2 absolute pin-y" style="left: 20%">.pin-y</span>
+                            <span class="text-grey-darker text-xs bg-grey-light px-2 py-1 m-2 absolute pin-x" style="bottom: 20%">.pin-x</span>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.pin</p>
+                        <div class="bg-grey-lighter relative rounded flex items-center justify-center" style="height: 100px">
+                            <span class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 absolute pin">.pin</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1 px-2">
+
+                    <h4 id="overflow" class="my-4">
+                        <a href="https://tailwindcss.com/docs/overflow">Overflow</a>
+                    </h4>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.overflow-auto</p>
+                        <div class="bg-grey-lighter h-16 overflow-auto">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et viverra mauris. Nunc id consequat tortor, a tempor ante. In sed tempor ipsum. Mauris accumsan auctor nibh et hendrerit. Mauris nec faucibus leo. Nullam bibendum et lectus non viverra. Ut et laoreet est, in euismod magna. Quisque pellentesque lectus ac tincidunt scelerisque. Morbi vehicula sapien dui, a faucibus metus elementum a. Maecenas non lacinia neque. Curabitur efficitur enim a mauris placerat faucibus eu vel tellus. Pellentesque ornare sapien at massa volutpat sollicitudin. Curabitur pellentesque sodales elit, nec iaculis massa accumsan pharetra. Integer dictum mi id volutpat porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.overflow-hidden</p>
+                        <div class="bg-grey-lighter h-16 overflow-hidden">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et viverra mauris. Nunc id consequat tortor, a tempor ante. In sed tempor ipsum. Mauris accumsan auctor nibh et hendrerit. Mauris nec faucibus leo. Nullam bibendum et lectus non viverra. Ut et laoreet est, in euismod magna. Quisque pellentesque lectus ac tincidunt scelerisque. Morbi vehicula sapien dui, a faucibus metus elementum a. Maecenas non lacinia neque. Curabitur efficitur enim a mauris placerat faucibus eu vel tellus. Pellentesque ornare sapien at massa volutpat sollicitudin. Curabitur pellentesque sodales elit, nec iaculis massa accumsan pharetra. Integer dictum mi id volutpat porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-auto border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.overflow-visible</p>
+                        <div class="bg-grey-lighter h-16 overflow-visible">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et viverra mauris. Nunc id consequat tortor, a tempor ante. In sed tempor ipsum. Mauris accumsan auctor nibh et hendrerit. Mauris nec faucibus leo. Nullam bibendum et lectus non viverra. Ut et laoreet est, in euismod magna. Quisque pellentesque lectus ac tincidunt scelerisque. Morbi vehicula sapien dui, a faucibus metus elementum a. Maecenas non lacinia neque. Curabitur efficitur enim a mauris placerat faucibus eu vel tellus. Pellentesque ornare sapien at massa volutpat sollicitudin. Curabitur pellentesque sodales elit, nec iaculis massa accumsan pharetra. Integer dictum mi id volutpat porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.overflow-scroll</p>
+                        <div class="bg-grey-lighter h-16 overflow-scroll">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et viverra mauris. Nunc id consequat tortor, a tempor ante. In sed tempor ipsum. Mauris accumsan auctor nibh et hendrerit. Mauris nec faucibus leo. Nullam bibendum et lectus non viverra. Ut et laoreet est, in euismod magna. Quisque pellentesque lectus ac tincidunt scelerisque. Morbi vehicula sapien dui, a faucibus metus elementum a. Maecenas non lacinia neque. Curabitur efficitur enim a mauris placerat faucibus eu vel tellus. Pellentesque ornare sapien at massa volutpat sollicitudin. Curabitur pellentesque sodales elit, nec iaculis massa accumsan pharetra. Integer dictum mi id volutpat porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.overflow-x-auto</p>
+                        <div class="bg-grey-lighter h-20 w-full overflow-x-auto">
+                            <div class="bg-grey-light my-1" style="width: 50%">width: 50%</div>
+                            <div class="bg-grey-light my-1" style="width: 100%">width: 100%</div>
+                            <div class="bg-grey-light my-1" style="width: 200%">width: 200%</div>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.overflow-x-scroll</p>
+                        <div class="bg-grey-lighter h-16 w-full overflow-x-scroll">
+                            <p>Lorem ipsum.</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.overflow-y-auto</p>
+                        <div class="bg-grey-lighter h-16 overflow-y-auto">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et viverra mauris. Nunc id consequat tortor, a tempor ante. In sed tempor ipsum. Mauris accumsan auctor nibh et hendrerit. Mauris nec faucibus leo. Nullam bibendum et lectus non viverra. Ut et laoreet est, in euismod magna. Quisque pellentesque lectus ac tincidunt scelerisque. Morbi vehicula sapien dui, a faucibus metus elementum a. Maecenas non lacinia neque. Curabitur efficitur enim a mauris placerat faucibus eu vel tellus. Pellentesque ornare sapien at massa volutpat sollicitudin. Curabitur pellentesque sodales elit, nec iaculis massa accumsan pharetra. Integer dictum mi id volutpat porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </div>
+                    </div>
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <p class="font-mono text-xs text-grey-dark mb-2">.overflow-y-scroll</p>
+                        <div class="bg-grey-lighter h-16 overflow-y-scroll">
+                            <p>Lorem ipsum.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
 

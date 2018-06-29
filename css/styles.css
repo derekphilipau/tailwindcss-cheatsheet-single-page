@@ -1,0 +1,40 @@
+/* Z-Index example */
+
+.z-bar::after{
+    content: ".z-auto"
+}
+
+.z-box.z-40:hover ~ .z-bar{
+    z-index: 40;
+}
+.z-box.z-40:hover ~ .z-bar::after{
+    content: ".z-40"
+}
+
+.z-box.z-30:hover ~ .z-bar{
+    z-index: 30;
+}
+.z-box.z-30:hover ~ .z-bar::after{
+    content: ".z-30"
+}
+
+.z-box.z-20:hover ~ .z-bar{
+    z-index: 20;
+}
+.z-box.z-20:hover ~ .z-bar::after{
+    content: ".z-20"
+}
+
+.z-box.z-10:hover ~ .z-bar{
+    z-index: 10;
+}
+.z-box.z-10:hover ~ .z-bar::after{
+    content: ".z-10"
+}
+
+.z-box.z-0:hover ~ .z-bar{
+    z-index: 0;
+}
+.z-box.z-0:hover ~ .z-bar::after{
+    content: ".z-0"
+}
