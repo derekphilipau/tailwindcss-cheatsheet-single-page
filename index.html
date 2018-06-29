@@ -18,6 +18,11 @@
     <meta property="og:description" content="A simple, single-page cheatsheet for the Tailwind CSS framework." />
     <meta property="og:image" content="https://tailwindcss.com/img/twitter-large-card.png" />
 
+    <style>
+        .background-example {
+            background-image: url('./background-example.png');
+        }
+    </style>
 </head>
 
 <body class="text-black">
@@ -59,6 +64,18 @@
             <a href="#align-items">align-items</a>,
             <a href="#align-content">align-content</a>,
             <a href="#align-self">align-self</a>,
+            <a href="#justify-content">justify-content</a>,
+            <a href="#flex-flex-grow-flex-shrink">flex</a>,
+            <a href="#flex-flex-grow-flex-shrink">flex-grow</a>,
+            <a href="#flex-flex-grow-flex-shrink">flex-shrink</a>,
+
+            <!------------------------ Backgrounds ------------------------>
+            <a class="font-bold" href="#backgrounds">Backgrounds</a>,
+            <a href="#background-attachment">background-attachment</a>,
+            <a href="#background-position">background-position</a>,
+            <a href="#background-repeat">background-repeat</a>,
+            <a href="#background-size">background-size</a>,
+
 
             <!------------------------ Typography ------------------------>
             <a class="font-bold" href="#typography">Typography</a>,
@@ -424,7 +441,7 @@
             <div class="flex-1 px-2">
 
 
-                <h4 id="align-self" class="my-4">
+                <h4 id="justify-content" class="my-4">
                     <a href="https://tailwindcss.com/docs/flexbox-justify-content">justify-content</a>
                 </h4>
 
@@ -477,7 +494,7 @@
 
 
 
-                <h4 id="align-self" class="my-4">
+                <h4 id="flex-flex-grow-flex-shrink" class="my-4">
                     <a href="https://tailwindcss.com/docs/flexbox-flex-grow-shrink">flex, flex-grow, flex-shrink</a>
                 </h4>
 
@@ -666,6 +683,149 @@
 
 
 
+        <h2 id="backgrounds" class="my-4">Backgrounds</h2>
+
+        <div class="flex">
+            <div class="flex-1 px-2">
+                <h4 id="background-attachment" class="my-4">
+                    <a href="https://tailwindcss.com/docs/background-attachment">background-attachment</a>
+                </h4>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-fixed</code>
+                    <div class="flex h-24 bg-fixed" style="background: url(./background-example.png)">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-local</code>
+                    <div class="flex h-24 bg-local" style="background: url(./background-example.png)">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-scroll</code>
+                    <div class="flex h-24 bg-scroll" style="background: url(./background-example.png)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-1 px-2">
+                <h4 id="background-position" class="my-4">
+                    <a href="https://tailwindcss.com/docs/background-position">background-position</a>
+                </h4>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-bottom</code>
+                    <div class="h-24 background-example bg-grey-light bg-no-repeat bg-bottom">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-center</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-center">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-left</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-left">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-left-bottom</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-left-bottom">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-left-top</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-left-top">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-right</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-right">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-right-bottom</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-right-bottom">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-right-top</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-right-top">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-top</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-top">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex-1 px-2">
+                <h4 id="background-repeat" class="my-4">
+                    <a href="https://tailwindcss.com/docs/background-repeat">background-repeat</a>
+                </h4>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-repeat</code>
+                    <div class="h-24 background-example bg-grey-light bg-repeat">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-no-repeat</code>
+                    <div class="h-24 background-example bg-grey-light bg-no-repeat">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-repeat-x</code>
+                    <div class="h-24 background-example bg-grey-light bg-repeat-x">
+                    </div>
+                </div>
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-repeat-y</code>
+                    <div class="h-24 background-example bg-grey-light bg-repeat-y">
+                    </div>
+                </div>
+
+
+                <h4 id="background-size" class="my-4">
+                        <a href="https://tailwindcss.com/docs/background-size">background-size</a>
+                    </h4>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <code class="text-sm text-grey-dark">.bg-auto</code>
+                        <div class="h-24 background-example bg-grey-light bg-auto">
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <code class="text-sm text-grey-dark">.bg-cover</code>
+                        <div class="h-24 background-example bg-grey-light bg-cover">
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <code class="text-sm text-grey-dark">.bg-contain</code>
+                        <div class="h-24 background-example bg-grey-light bg-contain">
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
+
 
         <h2 id="typography" class="my-4">Typography</h2>
 
@@ -676,40 +836,58 @@
         <table class="text-grey-dark w-full text-left table-collapse">
             <tbody class="whitespace-no-wrap">
                 <tr>
-                    <td class="px-2 text-sm"><code>.text-xs</code></td>
+                    <td class="px-2 text-sm">
+                        <code>.text-xs</code>
+                    </td>
                     <td class="px-2 text-xs">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 text-sm"><code>.text-sm</code></td>
+                    <td class="px-2 text-sm">
+                        <code>.text-sm</code>
+                    </td>
                     <td class="px-2 text-sm">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 text-sm"><code>.text-base</code></td>
+                    <td class="px-2 text-sm">
+                        <code>.text-base</code>
+                    </td>
                     <td class="px-2 text-basae">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
 
-                    <td class="px-2 text-sm"><code>.text-lg</code></td>
+                    <td class="px-2 text-sm">
+                        <code>.text-lg</code>
+                    </td>
                     <td class="px-2 text-lg">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 text-sm"><code>.text-xl</code></td>
+                    <td class="px-2 text-sm">
+                        <code>.text-xl</code>
+                    </td>
                     <td class="px-2 text-xl">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 text-sm"><code>.text-2xl</code></td>
+                    <td class="px-2 text-sm">
+                        <code>.text-2xl</code>
+                    </td>
                     <td class="px-2 text-2xl">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 text-sm"><code>.text-3xl</code></td>
+                    <td class="px-2 text-sm">
+                        <code>.text-3xl</code>
+                    </td>
                     <td class="px-2 text-3xl">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 text-sm"><code>.text-4xl</code></td>
+                    <td class="px-2 text-sm">
+                        <code>.text-4xl</code>
+                    </td>
                     <td class="px-2 text-4xl">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 text-sm"><code>.text-5xl</code></td>
+                    <td class="px-2 text-sm">
+                        <code>.text-5xl</code>
+                    </td>
                     <td class="px-2 text-5xl">Lorem ipsum dolor sit amet</td>
                 </tr>
             </tbody>
@@ -728,15 +906,21 @@
                             <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.font-sans</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-sans</code>
+                            </td>
                             <td class="border border-grey-200 px-2 font-sans">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.font-serif</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-serif</code>
+                            </td>
                             <td class="border border-grey-200 px-2 font-serif">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.font-mono</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-mono</code>
+                            </td>
                             <td class="border border-grey-200 px-2 font-mono">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
@@ -753,39 +937,57 @@
                             <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.font-hairline</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-hairline</code>
+                            </td>
                             <td class="border border-grey-200 px-2 font-hairline">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.font-thin</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-thin</code>
+                            </td>
                             <td class="border border-grey-200 px-2 font-thin">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.font-light</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-light</code>
+                            </td>
                             <td class="border border-grey-200 px-2 font-light">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.font-normal</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-normal</code>
+                            </td>
                             <td class="border border-grey-200 px-2 font-normal">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.font-medium</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-medium</code>
+                            </td>
                             <td class="border border-grey-200 px-2 font-medium">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.font-semibold</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-semibold</code>
+                            </td>
                             <td class="border border-grey-200 px-2 font-semibold">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.font-bold</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-bold</code>
+                            </td>
                             <td class="border border-grey-200 px-2 font-bold">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.font-extrabold</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-extrabold</code>
+                            </td>
                             <td class="border border-grey-200 px-2 font-extrabold">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.font-black</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-black</code>
+                            </td>
                             <td class="border border-grey-200 px-2 font-black">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
@@ -802,15 +1004,21 @@
                             <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.tracking-tight</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.tracking-tight</code>
+                            </td>
                             <td class="border border-grey-200 px-2 tracking-tight">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.tracking-normal</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.tracking-normal</code>
+                            </td>
                             <td class="border border-grey-200 px-2 tracking-normal">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.tracking-wide</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.tracking-wide</code>
+                            </td>
                             <td class="border border-grey-200 px-2 tracking-wide">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
@@ -827,19 +1035,27 @@
                             <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.leading-none</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.leading-none</code>
+                            </td>
                             <td class="border border-grey-200 px-2 leading-none">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.leading-tight</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.leading-tight</code>
+                            </td>
                             <td class="border border-grey-200 px-2 leading-tight">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.leading-normal</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.leading-normal</code>
+                            </td>
                             <td class="border border-grey-200 px-2 leading-normal">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.leading-loose</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.leading-loose</code>
+                            </td>
                             <td class="border border-grey-200 px-2 leading-loose">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
@@ -857,11 +1073,15 @@
                             <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.italic</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.italic</code>
+                            </td>
                             <td class="border border-grey-200 px-2 italic">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.roman</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.roman</code>
+                            </td>
                             <td class="border border-grey-200 px-2 roman">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
@@ -878,19 +1098,27 @@
                             <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.uppercase</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.uppercase</code>
+                            </td>
                             <td class="border border-grey-200 px-2 uppercase">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.lowercase</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.lowercase</code>
+                            </td>
                             <td class="border border-grey-200 px-2 lowercase">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.capitalize</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.capitalize</code>
+                            </td>
                             <td class="border border-grey-200 px-2 capitalize">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.normal-case</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.normal-case</code>
+                            </td>
                             <td class="border border-grey-200 px-2 normal-case">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
@@ -907,15 +1135,21 @@
                             <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.underline</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.underline</code>
+                            </td>
                             <td class="border border-grey-200 px-2 underline">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.line-through</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.line-through</code>
+                            </td>
                             <td class="border border-grey-200 px-2 line-through">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 text-sm"><code>.no-underline</code></td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.no-underline</code>
+                            </td>
                             <td class="border border-grey-200 px-2 no-underline">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
