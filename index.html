@@ -22,38 +22,31 @@
 
 <body class="text-black">
 
-        <nav class="flex items-center justify-between flex-wrap bg-teal p-4 mb-4">
-                <div class="flex items-center flex-no-shrink text-white mr-6">
-                    <svg class="fill-current h-6 w-6 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
-                        />
-                    </svg>
-                    <span class="font-semibold text-xl tracking-tight">Tailwind CSS Cheatsheet</span>
-                </div>
-                <div class="block lg:hidden">
-                    <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <title>Menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                    <div class="text-sm lg:flex-grow">
-                        <a href="https://tailwindcss.com/docs/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-                            Tailwind CSS Docs
-                        </a>
-                        <a href="https://github.com/tailwindcss/tailwindcss" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-                            Tailwind CSS Github
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com/derekphilipau/tailwindcss-cheatsheet-single-page" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-                            Tailwind CSS Cheatsheet Github
-                        </a>
-                    </div>
-                </div>
-            </nav>
+    <nav class="flex items-center justify-between flex-wrap bg-teal p-4 mb-4">
+        <div class="flex items-center flex-no-shrink text-white mr-6">
+            <svg class="fill-current h-6 w-6 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+                />
+            </svg>
+            <span class="font-semibold text-xl tracking-tight">Tailwind CSS Cheatsheet</span>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+                <span class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter mr-4">
+                    Tailwind CSS:
+                </span>
+                <a href="https://tailwindcss.com/docs/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+                    Docs
+                </a>
+                <a href="https://github.com/tailwindcss/tailwindcss" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+                    Github
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/derekphilipau/tailwindcss-cheatsheet-single-page" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0">Github</a>
+            </div>
+        </div>
+    </nav>
 
     <div class="w-full px-4 pb-8">
 
@@ -211,9 +204,6 @@
                     </div>
                 </div>
 
-            </div>
-            <div class="flex-1 px-2">
-
                 <h4 id="align-items" class="my-4">
                     <a href="https://tailwindcss.com/docs/flexbox-align-items">align-items</a>
                 </h4>
@@ -257,15 +247,15 @@
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
                     <p class="font-mono text-xs text-grey-dark mb-2">.items-baseline</p>
                     <div class="flex items-baseline bg-grey-lighter h-16">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-xs">1</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-2xl">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-base">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 text-xs">1</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 text-2xl">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 text-base">3</div>
                     </div>
                 </div>
 
             </div>
-
             <div class="flex-1 px-2">
+
 
                 <h4 id="align-content" class="my-4">
                     <a href="https://tailwindcss.com/docs/flexbox-align-content">align-content</a>
@@ -424,6 +414,248 @@
                         <div class="self-stretch flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
                     </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="flex-1 px-2">
+
+
+                <h4 id="align-self" class="my-4">
+                    <a href="https://tailwindcss.com/docs/flexbox-justify-content">justify-content</a>
+                </h4>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.justify-start</p>
+                    <div class="flex justify-start bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.justify-center</p>
+                    <div class="flex justify-center bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.justify-end</p>
+                    <div class="flex justify-end bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+
+                </div>
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.justify-between</p>
+                    <div class="flex justify-between bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+
+                </div>
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.justify-around</p>
+                    <div class="flex justify-around bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+
+                </div>
+
+
+
+
+                <h4 id="align-self" class="my-4">
+                    <a href="https://tailwindcss.com/docs/flexbox-flex-grow-shrink">flex, flex-grow, flex-shrink</a>
+                </h4>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-initial</p>
+
+                    <p class="text-xs text-grey my-2">Items don't grow when there's extra space</p>
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-initial text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Short
+                        </div>
+                        <div class="flex-initial text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Medium length
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-grey my-2">Items shrink if possible when needed</p>
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-initial text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Short
+                        </div>
+                        <div class="flex-initial text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Medium length
+                        </div>
+                        <div class="flex-initial text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ad labore ipsam, aut rem quo repellat esse tempore id, quidem
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-1</p>
+
+                    <p class="text-xs text-grey my-2">Default behavior</p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Short
+                        </div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Medium
+                        </div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Significantly larger
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-grey my-2">With
+                        <code>.flex-1</code>
+                    </p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Short
+                        </div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Medium
+                        </div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Significantly larger
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-auto</p>
+
+                    <p class="text-xs text-grey my-2">Default behavior</p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Short
+                        </div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Medium
+                        </div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Significantly larger
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-grey my-2">With
+                        <code>.flex-auto</code>
+                    </p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-auto text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Short
+                        </div>
+                        <div class="flex-auto text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Medium
+                        </div>
+                        <div class="flex-auto text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Significantly larger
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-none</p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Can grow or shrink if needed
+                        </div>
+                        <div class="flex-none text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">
+                            Cannot grow or shrink
+                        </div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Can grow or shrink if needed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-grow</p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-none text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Cannot flex
+                        </div>
+                        <div class="flex-grow text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">
+                            Item that grows
+                        </div>
+                        <div class="flex-none text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Cannot flex
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-no-grow</p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-grow text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Will grow
+                        </div>
+                        <div class="flex-no-grow text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">
+                            Will not grow
+                        </div>
+                        <div class="flex-grow text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Will grow
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-shrink</p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-none text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Cannot flex
+                        </div>
+                        <div class="flex-shrink text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">
+                            Shrinks even if it causes the content to wrap
+                        </div>
+                        <div class="flex-none text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Cannot flex
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-no-shrink</p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-shrink text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Can shrink if needed
+                        </div>
+                        <div class="flex-no-shrink text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">
+                            Cannot shrink below initial size
+                        </div>
+                        <div class="flex-shrink text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Can shrink if needed
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
