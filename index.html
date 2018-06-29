@@ -19,42 +19,40 @@
     <meta property="og:description" content="A simple, single-page cheatsheet for the Tailwind CSS framework." />
     <meta property="og:image" content="https://tailwindcss.com/img/twitter-large-card.png" />
 
+    <style>
+        .background-example {
+            background-image: url('./background-example.png');
+        }
+    </style>
 </head>
 
 <body class="text-black">
 
-        <nav class="flex items-center justify-between flex-wrap bg-teal p-4 mb-4">
-                <div class="flex items-center flex-no-shrink text-white mr-6">
-                    <svg class="fill-current h-6 w-6 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
-                        />
-                    </svg>
-                    <span class="font-semibold text-xl tracking-tight">Tailwind CSS Cheatsheet</span>
-                </div>
-                <div class="block lg:hidden">
-                    <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <title>Menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                    <div class="text-sm lg:flex-grow">
-                        <a href="https://tailwindcss.com/docs/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-                            Tailwind CSS Docs
-                        </a>
-                        <a href="https://github.com/tailwindcss/tailwindcss" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-                            Tailwind CSS Github
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com/derekphilipau/tailwindcss-cheatsheet-single-page" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
-                            Tailwind CSS Cheatsheet Github
-                        </a>
-                    </div>
-                </div>
-            </nav>
+    <nav class="flex items-center justify-between flex-wrap bg-teal p-4 mb-4">
+        <div class="flex items-center flex-no-shrink text-white mr-6">
+            <svg class="fill-current h-6 w-6 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+                />
+            </svg>
+            <span class="font-semibold text-xl tracking-tight">Tailwind CSS Cheatsheet</span>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+                <span class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter mr-4">
+                    Tailwind CSS:
+                </span>
+                <a href="https://tailwindcss.com/docs/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+                    Docs
+                </a>
+                <a href="https://github.com/tailwindcss/tailwindcss" class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">
+                    Github
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/derekphilipau/tailwindcss-cheatsheet-single-page" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0">Github</a>
+            </div>
+        </div>
+    </nav>
 
     <div class="w-full px-4 pb-8">
 
@@ -67,6 +65,18 @@
             <a href="#align-items">align-items</a>,
             <a href="#align-content">align-content</a>,
             <a href="#align-self">align-self</a>,
+            <a href="#justify-content">justify-content</a>,
+            <a href="#flex-flex-grow-flex-shrink">flex</a>,
+            <a href="#flex-flex-grow-flex-shrink">flex-grow</a>,
+            <a href="#flex-flex-grow-flex-shrink">flex-shrink</a>,
+
+            <!------------------------ Backgrounds ------------------------>
+            <a class="font-bold" href="#backgrounds">Backgrounds</a>,
+            <a href="#background-attachment">background-attachment</a>,
+            <a href="#background-position">background-position</a>,
+            <a href="#background-repeat">background-repeat</a>,
+            <a href="#background-size">background-size</a>,
+
 
             <!------------------------ Layout ------------------------>
 
@@ -118,7 +128,7 @@
                 </h4>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.flex</p>
+                    <code class="text-sm text-grey-dark">.flex</code>
                     <div class="flex bg-grey-lighter">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -127,7 +137,8 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.inline-flex</p>
+                    <code class="text-sm text-grey-dark">.inline-flex</code>
+                    <br/>
                     <div class="inline-flex bg-grey-lighter">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -140,7 +151,7 @@
                 </h4>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-row</p>
+                    <code class="text-sm text-grey-dark">.flex-row</code>
                     <div class="flex flex-row bg-grey-lighter">
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -149,7 +160,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-row-reverse</p>
+                    <code class="text-sm text-grey-dark">.flex-row-reverse</code>
                     <div class="flex flex-row-reverse bg-grey-lighter">
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -158,7 +169,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-col</p>
+                    <code class="text-sm text-grey-dark">.flex-col</code>
                     <div class="flex flex-col bg-grey-lighter">
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -167,7 +178,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-col-reverse</p>
+                    <code class="text-sm text-grey-dark">.flex-col-reverse</code>
                     <div class="flex flex-col-reverse bg-grey-lighter">
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -180,7 +191,7 @@
                 </h4>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-no-wrap</p>
+                    <code class="text-sm text-grey-dark">.flex-no-wrap</code>
                     <div class="flex flex-no-wrap bg-grey-lighter">
                         <div class="w-2/5 flex-none">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -195,7 +206,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-wrap</p>
+                    <code class="text-sm text-grey-dark">.flex-wrap</code>
                     <div class="flex flex-wrap bg-grey-lighter">
                         <div class="w-2/5">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -210,7 +221,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.flex-wrap-reverse</p>
+                    <code class="text-sm text-grey-dark">.flex-wrap-reverse</code>
                     <div class="flex flex-wrap-reverse bg-grey-lighter">
                         <div class="w-2/5">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -224,15 +235,12 @@
                     </div>
                 </div>
 
-            </div>
-            <div class="flex-1 px-2">
-
                 <h4 id="align-items" class="my-4">
                     <a href="https://tailwindcss.com/docs/flexbox-align-items">align-items</a>
                 </h4>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.items-stretch</p>
+                    <code class="text-sm text-grey-dark">.items-stretch</code>
                     <div class="flex items-stretch bg-grey-lighter h-16">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -241,7 +249,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.items-start</p>
+                    <code class="text-sm text-grey-dark">.items-start</code>
                     <div class="flex items-start bg-grey-lighter h-16">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -250,7 +258,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.items-center</p>
+                    <code class="text-sm text-grey-dark">.items-center</code>
                     <div class="flex items-center bg-grey-lighter h-16">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -259,7 +267,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.items-end</p>
+                    <code class="text-sm text-grey-dark">.items-end</code>
                     <div class="flex items-end bg-grey-lighter h-16">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
@@ -268,24 +276,24 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.items-baseline</p>
+                    <code class="text-sm text-grey-dark">.items-baseline</code>
                     <div class="flex items-baseline bg-grey-lighter h-16">
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-xs">1</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-2xl">2</div>
-                        <div class="flex-1 text-grey-darker text-center bg-grey-light px-2 py-1 m-2 text-base">3</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 text-xs">1</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 text-2xl">2</div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2 text-base">3</div>
                     </div>
                 </div>
 
             </div>
-
             <div class="flex-1 px-2">
+
 
                 <h4 id="align-content" class="my-4">
                     <a href="https://tailwindcss.com/docs/flexbox-align-content">align-content</a>
                 </h4>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.content-start</p>
+                    <code class="text-sm text-grey-dark">.content-start</code>
                     <div class="flex content-start flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -307,7 +315,7 @@
 
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.content-center</p>
+                    <code class="text-sm text-grey-dark">.content-center</code>
                     <div class="flex content-center flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -328,7 +336,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.content-end</p>
+                    <code class="text-sm text-grey-dark">.content-end</code>
                     <div class="flex content-end flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -349,7 +357,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.content-between</p>
+                    <code class="text-sm text-grey-dark">.content-between</code>
                     <div class="flex content-between flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -370,7 +378,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.content-around</p>
+                    <code class="text-sm text-grey-dark">.content-around</code>
                     <div class="flex content-around flex-wrap bg-grey-lighter h-32">
                         <div class="w-1/3">
                             <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
@@ -395,7 +403,7 @@
                 </h4>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.self-auto</p>
+                    <code class="text-sm text-grey-dark">.self-auto</code>
                     <div class="flex items-stretch bg-grey-lighter h-24">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="self-auto flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
@@ -404,7 +412,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.self-start</p>
+                    <code class="text-sm text-grey-dark">.self-start</code>
                     <div class="flex items-stretch bg-grey-lighter h-24">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="self-start flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
@@ -413,7 +421,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.self-center</p>
+                    <code class="text-sm text-grey-dark">.self-center</code>
                     <div class="flex items-stretch bg-grey-lighter h-24">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="self-center flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
@@ -422,7 +430,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.self-end</p>
+                    <code class="text-sm text-grey-dark">.self-end</code>
                     <div class="flex items-stretch bg-grey-lighter h-24">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="self-end flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
@@ -431,7 +439,7 @@
                 </div>
 
                 <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
-                    <p class="font-mono text-xs text-grey-dark mb-2">.self-stretch</p>
+                    <code class="text-sm text-grey-dark">.self-stretch</code>
                     <div class="flex items-start bg-grey-lighter h-24">
                         <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
                         <div class="self-stretch flex-1 text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">2</div>
@@ -439,11 +447,405 @@
                     </div>
                 </div>
 
+
+
+            </div>
+
+            <div class="flex-1 px-2">
+
+
+                <h4 id="justify-content" class="my-4">
+                    <a href="https://tailwindcss.com/docs/flexbox-justify-content">justify-content</a>
+                </h4>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.justify-start</code>
+                    <div class="flex justify-start bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.justify-center</code>
+                    <div class="flex justify-center bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.justify-end</code>
+                    <div class="flex justify-end bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+
+                </div>
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.justify-between</code>
+                    <div class="flex justify-between bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+
+                </div>
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.justify-around</code>
+                    <div class="flex justify-around bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">1</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">2</div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">3</div>
+                    </div>
+
+                </div>
+
+
+
+
+                <h4 id="flex-flex-grow-flex-shrink" class="my-4">
+                    <a href="https://tailwindcss.com/docs/flexbox-flex-grow-shrink">flex, flex-grow, flex-shrink</a>
+                </h4>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.flex-initial</code>
+
+                    <p class="text-xs text-grey my-2">Items don't grow when there's extra space</p>
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-initial text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Short
+                        </div>
+                        <div class="flex-initial text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Medium length
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-grey my-2">Items shrink if possible when needed</p>
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-initial text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Short
+                        </div>
+                        <div class="flex-initial text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Medium length
+                        </div>
+                        <div class="flex-initial text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ad labore ipsam, aut rem quo repellat esse tempore id, quidem
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.flex-1</code>
+
+                    <p class="text-xs text-grey my-2">Default behavior</p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Short
+                        </div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Medium
+                        </div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Significantly larger
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-grey my-2">With
+                        <code>.flex-1</code>
+                    </p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Short
+                        </div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Medium
+                        </div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Significantly larger
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.flex-auto</code>
+
+                    <p class="text-xs text-grey my-2">Default behavior</p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Short
+                        </div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Medium
+                        </div>
+                        <div class="text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Significantly larger
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-grey my-2">With
+                        <code>.flex-auto</code>
+                    </p>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-auto text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Short
+                        </div>
+                        <div class="flex-auto text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Medium
+                        </div>
+                        <div class="flex-auto text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Significantly larger
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.flex-none</code>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Can grow or shrink if needed
+                        </div>
+                        <div class="flex-none text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">
+                            Cannot grow or shrink
+                        </div>
+                        <div class="flex-1 text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Can grow or shrink if needed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.flex-grow</code>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-none text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Cannot flex
+                        </div>
+                        <div class="flex-grow text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">
+                            Item that grows
+                        </div>
+                        <div class="flex-none text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Cannot flex
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.flex-no-grow</code>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-grow text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Will grow
+                        </div>
+                        <div class="flex-no-grow text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">
+                            Will not grow
+                        </div>
+                        <div class="flex-grow text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Will grow
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.flex-shrink</code>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-none text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Cannot flex
+                        </div>
+                        <div class="flex-shrink text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">
+                            Shrinks even if it causes the content to wrap
+                        </div>
+                        <div class="flex-none text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Cannot flex
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.flex-no-shrink</code>
+
+                    <div class="flex bg-grey-lighter">
+                        <div class="flex-shrink text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Can shrink if needed
+                        </div>
+                        <div class="flex-no-shrink text-grey-darkest text-center text-xs bg-grey px-2 py-1 m-2">
+                            Cannot shrink below initial size
+                        </div>
+                        <div class="flex-shrink text-grey-darker text-center text-xs bg-grey-light px-2 py-1 m-2">
+                            Can shrink if needed
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
 
         </div>
 
+
+
+        <h2 id="backgrounds" class="my-4">Backgrounds</h2>
+
+        <div class="flex">
+            <div class="flex-1 px-2">
+                <h4 id="background-attachment" class="my-4">
+                    <a href="https://tailwindcss.com/docs/background-attachment">background-attachment</a>
+                </h4>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-fixed</code>
+                    <div class="flex h-24 background-example bg-fixed overflow-scroll">
+                            <div class="h-64 p-2 text-grey-darkest text-sm">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-local</code>
+                    <div class="flex h-24 background-example bg-local overflow-scroll">
+                            <div class="h-64 p-2 text-grey-darkest text-sm">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-scroll</code>
+                    <div class="flex h-24 background-example bg-scroll overflow-scroll">
+                            <div class="h-64 p-2 text-grey-darkest text-sm">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="flex-1 px-2">
+                <h4 id="background-position" class="my-4">
+                    <a href="https://tailwindcss.com/docs/background-position">background-position</a>
+                </h4>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-bottom</code>
+                    <div class="h-24 background-example bg-grey-light bg-no-repeat bg-bottom">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-center</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-center">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-left</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-left">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-left-bottom</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-left-bottom">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-left-top</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-left-top">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-right</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-right">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-right-bottom</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-right-bottom">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-right-top</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-right-top">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-top</code>
+                    <div class="flex h-24 background-example bg-grey-light bg-no-repeat bg-top">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex-1 px-2">
+                <h4 id="background-repeat" class="my-4">
+                    <a href="https://tailwindcss.com/docs/background-repeat">background-repeat</a>
+                </h4>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-repeat</code>
+                    <div class="h-24 background-example bg-grey-light bg-repeat">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-no-repeat</code>
+                    <div class="h-24 background-example bg-grey-light bg-no-repeat">
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-repeat-x</code>
+                    <div class="h-24 background-example bg-grey-light bg-repeat-x">
+                    </div>
+                </div>
+                <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.bg-repeat-y</code>
+                    <div class="h-24 background-example bg-grey-light bg-repeat-y">
+                    </div>
+                </div>
+
+
+                <h4 id="background-size" class="my-4">
+                        <a href="https://tailwindcss.com/docs/background-size">background-size</a>
+                    </h4>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <code class="text-sm text-grey-dark">.bg-auto</code>
+                        <div class="h-24 background-example bg-grey-light bg-auto">
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <code class="text-sm text-grey-dark">.bg-cover</code>
+                        <div class="h-24 background-example bg-grey-light bg-cover">
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-grey-light p-3 mb-4 bg-white">
+                        <code class="text-sm text-grey-dark">.bg-contain</code>
+                        <div class="h-24 background-example bg-grey-light bg-contain">
+                        </div>
+                    </div>
+            </div>
+
+        </div>
 
 
 
@@ -768,41 +1170,59 @@
         <table class="text-grey-dark w-full text-left table-collapse">
             <tbody class="whitespace-no-wrap">
                 <tr>
-                    <td class="px-2 font-mono text-xs">.text-xs</td>
-                    <td class="px-2 text-xs">The quick brown fox jumps over the lazy dog.</td>
+                    <td class="px-2 text-sm">
+                        <code>.text-xs</code>
+                    </td>
+                    <td class="px-2 text-xs">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 font-mono text-xs">.text-sm</td>
-                    <td class="px-2 text-sm">The quick brown fox jumps over the lazy dog.</td>
+                    <td class="px-2 text-sm">
+                        <code>.text-sm</code>
+                    </td>
+                    <td class="px-2 text-sm">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 font-mono text-xs">.text-base</td>
-                    <td class="px-2 text-basae">The quick brown fox jumps over the lazy dog.</td>
+                    <td class="px-2 text-sm">
+                        <code>.text-base</code>
+                    </td>
+                    <td class="px-2 text-basae">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
 
-                    <td class="px-2 font-mono text-xs">.text-lg</td>
-                    <td class="px-2 text-lg">The quick brown fox jumps over the lazy dog.</td>
+                    <td class="px-2 text-sm">
+                        <code>.text-lg</code>
+                    </td>
+                    <td class="px-2 text-lg">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 font-mono text-xs">.text-xl</td>
-                    <td class="px-2 text-xl">The quick brown fox jumps over the lazy dog.</td>
+                    <td class="px-2 text-sm">
+                        <code>.text-xl</code>
+                    </td>
+                    <td class="px-2 text-xl">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 font-mono text-xs">.text-2xl</td>
-                    <td class="px-2 text-2xl">The quick brown fox jumps over the lazy dog.</td>
+                    <td class="px-2 text-sm">
+                        <code>.text-2xl</code>
+                    </td>
+                    <td class="px-2 text-2xl">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 font-mono text-xs">.text-3xl</td>
-                    <td class="px-2 text-3xl">The quick brown fox jumps over the lazy dog.</td>
+                    <td class="px-2 text-sm">
+                        <code>.text-3xl</code>
+                    </td>
+                    <td class="px-2 text-3xl">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 font-mono text-xs">.text-4xl</td>
-                    <td class="px-2 text-4xl">The quick brown fox jumps over the lazy dog.</td>
+                    <td class="px-2 text-sm">
+                        <code>.text-4xl</code>
+                    </td>
+                    <td class="px-2 text-4xl">Lorem ipsum dolor sit amet</td>
                 </tr>
                 <tr>
-                    <td class="px-2 font-mono text-xs">.text-5xl</td>
-                    <td class="px-2 text-5xl">The quick brown fox jumps over the lazy dog.</td>
+                    <td class="px-2 text-sm">
+                        <code>.text-5xl</code>
+                    </td>
+                    <td class="px-2 text-5xl">Lorem ipsum dolor sit amet</td>
                 </tr>
             </tbody>
         </table>
@@ -817,19 +1237,25 @@
                     <tbody class="whitespace-no-wrap">
                         <tr>
                             <td class="border border-grey-200 px-2"></td>
-                            <td class="border border-grey-200 px-2">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.font-sans</td>
-                            <td class="border border-grey-200 px-2 font-sans">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-sans</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 font-sans">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.font-serif</td>
-                            <td class="border border-grey-200 px-2 font-serif">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-serif</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 font-serif">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.font-mono</td>
-                            <td class="border border-grey-200 px-2 font-mono">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-mono</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 font-mono">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
                 </table>
@@ -842,43 +1268,61 @@
                     <tbody class="whitespace-no-wrap">
                         <tr>
                             <td class="border border-grey-200 px-2"></td>
-                            <td class="border border-grey-200 px-2">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.font-hairline</td>
-                            <td class="border border-grey-200 px-2 font-hairline">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-hairline</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 font-hairline">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.font-thin</td>
-                            <td class="border border-grey-200 px-2 font-thin">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-thin</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 font-thin">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.font-light</td>
-                            <td class="border border-grey-200 px-2 font-light">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-light</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 font-light">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.font-normal</td>
-                            <td class="border border-grey-200 px-2 font-normal">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-normal</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 font-normal">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.font-medium</td>
-                            <td class="border border-grey-200 px-2 font-medium">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-medium</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 font-medium">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.font-semibold</td>
-                            <td class="border border-grey-200 px-2 font-semibold">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-semibold</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 font-semibold">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.font-bold</td>
-                            <td class="border border-grey-200 px-2 font-bold">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-bold</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 font-bold">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.font-extrabold</td>
-                            <td class="border border-grey-200 px-2 font-extrabold">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-extrabold</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 font-extrabold">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.font-black</td>
-                            <td class="border border-grey-200 px-2 font-black">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.font-black</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 font-black">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
                 </table>
@@ -891,19 +1335,25 @@
                     <tbody class="whitespace-no-wrap">
                         <tr>
                             <td class="border border-grey-200 px-2"></td>
-                            <td class="border border-grey-200 px-2">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.tracking-tight</td>
-                            <td class="border border-grey-200 px-2 tracking-tight">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.tracking-tight</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 tracking-tight">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.tracking-normal</td>
-                            <td class="border border-grey-200 px-2 tracking-normal">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.tracking-normal</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 tracking-normal">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.tracking-wide</td>
-                            <td class="border border-grey-200 px-2 tracking-wide">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.tracking-wide</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 tracking-wide">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
                 </table>
@@ -916,23 +1366,31 @@
                     <tbody class="whitespace-no-wrap">
                         <tr>
                             <td class="border border-grey-200 px-2"></td>
-                            <td class="border border-grey-200 px-2">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.leading-none</td>
-                            <td class="border border-grey-200 px-2 leading-none">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.leading-none</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 leading-none">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.leading-tight</td>
-                            <td class="border border-grey-200 px-2 leading-tight">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.leading-tight</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 leading-tight">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.leading-normal</td>
-                            <td class="border border-grey-200 px-2 leading-normal">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.leading-normal</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 leading-normal">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.leading-loose</td>
-                            <td class="border border-grey-200 px-2 leading-loose">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.leading-loose</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 leading-loose">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
                 </table>
@@ -946,15 +1404,19 @@
                     <tbody class="whitespace-no-wrap">
                         <tr>
                             <td class="border border-grey-200 px-2"></td>
-                            <td class="border border-grey-200 px-2">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.italic</td>
-                            <td class="border border-grey-200 px-2 italic">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.italic</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 italic">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.roman</td>
-                            <td class="border border-grey-200 px-2 roman">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.roman</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 roman">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
                 </table>
@@ -967,23 +1429,31 @@
                     <tbody class="whitespace-no-wrap">
                         <tr>
                             <td class="border border-grey-200 px-2"></td>
-                            <td class="border border-grey-200 px-2">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.uppercase</td>
-                            <td class="border border-grey-200 px-2 uppercase">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.uppercase</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 uppercase">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.lowercase</td>
-                            <td class="border border-grey-200 px-2 lowercase">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.lowercase</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 lowercase">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.capitalize</td>
-                            <td class="border border-grey-200 px-2 capitalize">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.capitalize</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 capitalize">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.normal-case</td>
-                            <td class="border border-grey-200 px-2 normal-case">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.normal-case</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 normal-case">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
                 </table>
@@ -996,19 +1466,25 @@
                     <tbody class="whitespace-no-wrap">
                         <tr>
                             <td class="border border-grey-200 px-2"></td>
-                            <td class="border border-grey-200 px-2">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.underline</td>
-                            <td class="border border-grey-200 px-2 underline">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.underline</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 underline">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.line-through</td>
-                            <td class="border border-grey-200 px-2 line-through">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.line-through</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 line-through">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
-                            <td class="border border-grey-200 px-2 font-mono text-xs">.no-underline</td>
-                            <td class="border border-grey-200 px-2 no-underline">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.no-underline</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 no-underline">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1021,23 +1497,23 @@
                     <tbody class="whitespace-no-wrap">
                         <tr>
                             <td class="border border-grey-light px-2"></td>
-                            <td class="border border-grey-light px-2">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-light px-2">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
                             <td class="border border-grey-light px-2 font-mono text-xs">.text-left</td>
-                            <td class="border border-grey-light px-2 text-left">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-light px-2 text-left">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
                             <td class="border border-grey-light px-2 font-mono text-xs">.text-center</td>
-                            <td class="border border-grey-light px-2 text-center">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-light px-2 text-center">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
                             <td class="border border-grey-light px-2 font-mono text-xs">.text-right</td>
-                            <td class="border border-grey-light px-2 text-right">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-light px-2 text-right">Lorem ipsum dolor sit amet</td>
                         </tr>
                         <tr>
                             <td class="border border-grey-light px-2 font-mono text-xs">.text-justify</td>
-                            <td class="border border-grey-light px-2 text-justify">The quick brown fox jumps over the lazy dog.</td>
+                            <td class="border border-grey-light px-2 text-justify">Lorem ipsum dolor sit amet</td>
                         </tr>
                     </tbody>
                 </table>
