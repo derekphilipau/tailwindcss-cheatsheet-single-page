@@ -97,10 +97,14 @@
             <a href="#font-weight">font-weight</a>,
             <a href="#letter-spacing">letter-spacing</a>,
             <a href="#line-height">line-height</a>,
+            <a href="#lists">lists</a>,
             <a href="#font-style">font-style</a>,
             <a href="#text-transform">text-transform</a>,
             <a href="#text-decoration">text-decoration</a>,
+            <a href="#font-smoothing">font-smoothing</a>,
             <a href="#text-align">text-align</a>,
+            <a href="#white-space">white-space</a>,
+            <a href="#white-space">word-wrap</a>,
 
             <!------------------------ Color ------------------------>
             <a class="font-bold" href="#color">Color</a>,
@@ -1280,7 +1284,7 @@
                     <a href="https://tailwindcss.com/docs/font-weight">font-weight</a>
                 </h4>
 
-                <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
+                <table class="text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
                         <tr>
                             <td class="border border-grey-200 px-2"></td>
@@ -1378,7 +1382,7 @@
                     <a href="https://tailwindcss.com/docs/line-height">line-height</a>
                 </h4>
 
-                <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
+                <table class="text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
                         <tr>
                             <td class="border border-grey-200 px-2"></td>
@@ -1410,75 +1414,108 @@
                         </tr>
                     </tbody>
                 </table>
+
+                <h4 id="lists" class="my-4">
+                    <a href="https://tailwindcss.com/docs/lists">lists</a>
+                </h4>
+                <table class="text-grey-dark w-full text-left table-collapse">
+                    <tbody class="whitespace-no-wrap">
+                        <tr>
+                            <td class="border border-grey-200 px-2 text-sm">
+                            </td>
+                            <td class="border border-grey-200 px-2 leading-none">
+                                <ul>
+                                    <li>List item 1</li>
+                                    <li>List item 2</li>
+                                    <li>List item 3</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.list-reset</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 leading-tight">
+                                <ul class="list-reset">
+                                    <li>List item 1</li>
+                                    <li>List item 2</li>
+                                    <li>List item 3</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 id="font-style" class="my-4">
+                        <a href="https://tailwindcss.com/docs/text-style">font-style</a>
+                    </h4>
+
+                    <table class="text-grey-dark w-full text-left table-collapse">
+                        <tbody class="whitespace-no-wrap">
+                            <tr>
+                                <td class="border border-grey-200 px-2"></td>
+                                <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-grey-200 px-2 text-sm">
+                                    <code>.italic</code>
+                                </td>
+                                <td class="border border-grey-200 px-2 italic">Lorem ipsum dolor sit amet</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-grey-200 px-2 text-sm">
+                                    <code>.roman</code>
+                                </td>
+                                <td class="border border-grey-200 px-2 roman">Lorem ipsum dolor sit amet</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 id="font-style" class="my-4">
+                        <a href="https://tailwindcss.com/docs/text-style">text-transform</a>
+                    </h4>
+
+                    <table class="text-grey-dark w-full text-left table-collapse">
+                        <tbody class="whitespace-no-wrap">
+                            <tr>
+                                <td class="border border-grey-200 px-2"></td>
+                                <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-grey-200 px-2 text-sm">
+                                    <code>.uppercase</code>
+                                </td>
+                                <td class="border border-grey-200 px-2 uppercase">Lorem ipsum dolor sit amet</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-grey-200 px-2 text-sm">
+                                    <code>.lowercase</code>
+                                </td>
+                                <td class="border border-grey-200 px-2 lowercase">Lorem ipsum dolor sit amet</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-grey-200 px-2 text-sm">
+                                    <code>.capitalize</code>
+                                </td>
+                                <td class="border border-grey-200 px-2 capitalize">Lorem ipsum dolor sit amet</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-grey-200 px-2 text-sm">
+                                    <code>.normal-case</code>
+                                </td>
+                                <td class="border border-grey-200 px-2 normal-case">Lorem ipsum dolor sit amet</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
             </div>
             <div class="flex-1 px-2">
-                <h4 id="font-style" class="my-4">
-                    <a href="https://tailwindcss.com/docs/text-style">font-style</a>
-                </h4>
-
-                <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
-                    <tbody class="whitespace-no-wrap">
-                        <tr>
-                            <td class="border border-grey-200 px-2"></td>
-                            <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-grey-200 px-2 text-sm">
-                                <code>.italic</code>
-                            </td>
-                            <td class="border border-grey-200 px-2 italic">Lorem ipsum dolor sit amet</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-grey-200 px-2 text-sm">
-                                <code>.roman</code>
-                            </td>
-                            <td class="border border-grey-200 px-2 roman">Lorem ipsum dolor sit amet</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h4 id="font-style" class="my-4">
-                    <a href="https://tailwindcss.com/docs/text-style">text-transform</a>
-                </h4>
-
-                <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
-                    <tbody class="whitespace-no-wrap">
-                        <tr>
-                            <td class="border border-grey-200 px-2"></td>
-                            <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-grey-200 px-2 text-sm">
-                                <code>.uppercase</code>
-                            </td>
-                            <td class="border border-grey-200 px-2 uppercase">Lorem ipsum dolor sit amet</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-grey-200 px-2 text-sm">
-                                <code>.lowercase</code>
-                            </td>
-                            <td class="border border-grey-200 px-2 lowercase">Lorem ipsum dolor sit amet</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-grey-200 px-2 text-sm">
-                                <code>.capitalize</code>
-                            </td>
-                            <td class="border border-grey-200 px-2 capitalize">Lorem ipsum dolor sit amet</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-grey-200 px-2 text-sm">
-                                <code>.normal-case</code>
-                            </td>
-                            <td class="border border-grey-200 px-2 normal-case">Lorem ipsum dolor sit amet</td>
-                        </tr>
-                    </tbody>
-                </table>
 
                 <h4 id="text-decoration" class="my-4">
                     <a href="https://tailwindcss.com/docs/text-style">text-decoration</a>
                 </h4>
 
-                <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
+                <table class="text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
                         <tr>
                             <td class="border border-grey-200 px-2"></td>
@@ -1505,11 +1542,37 @@
                     </tbody>
                 </table>
 
+                <h4 id="font-smoothing" class="my-4">
+                        <a href="https://tailwindcss.com/docs/text-style">font-smoothing</a>
+                </h4>
+
+                <table class="text-grey-dark w-full text-left table-collapse">
+                    <tbody class="whitespace-no-wrap">
+                        <tr>
+                            <td class="border border-grey-200 px-2"></td>
+                            <td class="border border-grey-200 px-2">Lorem ipsum dolor sit amet</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.antialiased</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 antialiased">Lorem ipsum dolor sit amet</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-grey-200 px-2 text-sm">
+                                <code>.subpixel-antialiased</code>
+                            </td>
+                            <td class="border border-grey-200 px-2 subpixel-antialiased">Lorem ipsum dolor sit amet</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
                 <h4 id="text-align" class="my-4">
                     <a href="https://tailwindcss.com/docs/text-alignment">text-align</a>
                 </h4>
 
-                <table class="text-grey-dark text-grey-dark text-grey-dark w-full text-left table-collapse">
+                <table class="text-grey-dark w-full text-left table-collapse">
                     <tbody class="whitespace-no-wrap">
                         <tr>
                             <td class="border border-grey-light px-2"></td>
@@ -1533,6 +1596,135 @@
                         </tr>
                     </tbody>
                 </table>
+
+                <h4 id="vertical-align" class="my-4">
+                    <a href="https://tailwindcss.com/docs/vertical-alignment">vertical-align</a>
+                </h4>
+
+                <table class="text-grey-dark w-full text-left table-collapse">
+                    <tbody class="whitespace-no-wrap">
+                        <tr>
+                            <td class="border border-grey-light px-2"></td>
+                            <td class="border border-grey-light px-2 h-12">Lorem ipsum dolor sit amet</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-grey-light px-2 font-mono text-xs">.align-baseline</td>
+                            <td class="border border-grey-light px-2 h-12 align-baseline">Lorem ipsum dolor sit amet</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-grey-light px-2 font-mono text-xs">.align-top</td>
+                            <td class="border border-grey-light px-2 h-12 align-top">Lorem ipsum dolor sit amet</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-grey-light px-2 font-mono text-xs">.align-middle</td>
+                            <td class="border border-grey-light px-2 h-12 align-middle">Lorem ipsum dolor sit amet</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-grey-light px-2 font-mono text-xs">.align-bottom</td>
+                            <td class="border border-grey-light px-2 h-12 align-bottom">Lorem ipsum dolor sit amet</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-grey-light px-2 font-mono text-xs">.align-text-top</td>
+                            <td class="border border-grey-light px-2 h-12 align-text-top">Lorem ipsum dolor sit amet</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-grey-light px-2 font-mono text-xs">.align-text-bottom</td>
+                            <td class="border border-grey-light px-2 h-12 align-text-bottom">Lorem ipsum dolor sit amet</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 id="white-space" class="my-4">
+                    <a href="https://tailwindcss.com/docs/whitespace-and-wrapping">white-space, word-wrap</a>
+                </h4>
+
+                <div class="rounded overflow-hidden border border-grey-light p-2 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.whitespace-normal</code>
+                    <div class="flex justify-center w-full mt-1">
+                        <div class="whitespace-normal flex-wrap bg-grey-lighter text-grey-darker p-2 w-48">Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit.
+Pellentesque et viverra mauris.
+Nunc id consequat tortor,
+    a tempor ante.</div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-2 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.whitespace-no-wrap</code>
+                    <div class="flex justify-center w-full mt-1">
+                        <div class="whitespace-no-wrap flex-wrap bg-grey-lighter text-grey-darker p-2 w-48">Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit.
+Pellentesque et viverra mauris.
+Nunc id consequat tortor,
+    a tempor ante.</div>
+                    </div>
+                </div>
+
+
+                <div class="rounded overflow-hidden border border-grey-light p-2 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.whitespace-pre</code>
+                    <div class="flex whitespace-pre flex-wrap bg-grey-lighter text-grey-darker mt-1 p-2">Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit.
+Pellentesque et viverra mauris.
+Nunc id consequat tortor,
+    a tempor ante.</div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-2 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.whitespace-pre-line</code>
+                    <div class="flex whitespace-pre flex-wrap bg-grey-lighter text-grey-darker mt-1 p-2">Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit.
+Pellentesque et viverra mauris.
+Nunc id consequat tortor,
+    a tempor ante.</div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-2 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.whitespace-pre-wrap</code>
+                    <div class="flex whitespace-pre-wrap flex-wrap bg-grey-lighter text-grey-darker mt-1 p-2">Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit.
+Pellentesque et viverra mauris.
+Nunc id consequat tortor,
+    a tempor ante.</div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-2 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.whitespace-pre-wrap</code>
+                    <div class="flex justify-center w-full mt-1">
+                        <div class="whitespace-pre-wrap flex-wrap bg-grey-lighter text-grey-darker p-2 w-48">Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit.
+Pellentesque et viverra mauris.
+Nunc id consequat tortor,
+    a tempor ante.</div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-2 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.break-words</code>
+                    <div class="flex justify-center w-full mt-1">
+                        <div class="break-words flex-wrap bg-grey-lighter text-grey-darker p-2 w-64">
+                            Loremipsumdolorsitametconsecteturadipiscingelit.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-2 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.break-normal</code>
+                    <div class="flex justify-center w-full mt-1">
+                        <div class="break-normal flex-wrap bg-grey-lighter text-grey-darker p-2 w-64">
+                            Loremipsumdolorsitametconsecteturadipiscingelit.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded overflow-hidden border border-grey-light p-2 mb-4 bg-white">
+                    <code class="text-sm text-grey-dark">.truncate</code>
+                    <div class="flex justify-center w-full mt-1">
+                        <div class="truncate flex-wrap bg-grey-lighter text-grey-darker p-2 w-64">
+                            Loremipsumdolorsitametconsecteturadipiscingelit.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1544,7 +1736,7 @@
             <a href="https://tailwindcss.com/docs/border-color/">border-color</a>
         </h4>
 
-        <table class="text-grey-dark text-grey-dark text-grey-dark w-full font-normal leading-normal font-mono text-xs border-separate">
+        <table class="text-grey-dark w-full font-normal leading-normal font-mono text-xs border-separate">
             <tbody class="">
                 <tr>
                     <td class="rounded bg-transparent text-black p-1">.bg-transparent</td>
