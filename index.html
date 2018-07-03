@@ -145,6 +145,19 @@
 
         <div class="flex text-sm">
             <div class="flex-none py-1 pr-1 mb-1">
+                <a class="font-bold" href="#interactivity">Interactivity</a>
+            </div>
+            <div class="w-full rounded overflow-hidden p-1 mb-1 bg-white">
+                <a href="#cursor">cursor</a>,
+                <a href="#pointer-events">pointer-events</a>,
+                <a href="#resize">resize</a>,
+                <a href="#user-select">user-select</a>
+            </div>
+        </div>
+
+
+        <div class="flex text-sm">
+            <div class="flex-none py-1 pr-1 mb-1">
                 <a class="font-bold" href="#typography">Typography</a>
             </div>
             <div class="w-full rounded overflow-hidden p-1 mb-1 bg-white">
@@ -2762,6 +2775,86 @@
             </div>
         </div>
 
+
+        <h2 id="interactivity" class="my-4">Interactivity</h2>
+
+        <h4 id="cursor" class="mb-2">
+            <a href="https://tailwindcss.com/docs/cursor">cursor</a>
+        </h4>
+        <div class="flex flex-wrap">
+            <div class="mr-2">
+                <code class="text-xs text-grey-dark">.cursor-auto</code>
+                <div class="w-32 h-10 bg-grey-lighter mt-1 p-0">
+                    <div class="w-full h-full text-center bg-grey-light cursor-auto"></div>
+                </div>
+            </div>
+            <div class="mr-2">
+                <code class="text-xs text-grey-dark">.cursor-default</code>
+                <div class="w-32 h-10 bg-grey-lighter mt-1 p-0">
+                    <div class="w-full h-full text-center bg-grey-light cursor-default"></div>
+                </div>
+            </div>
+            <div class="mr-2">
+                <code class="text-xs text-grey-dark">.cursor-pointer</code>
+                <div class="w-32 h-10 bg-grey-lighter mt-1 p-0">
+                    <div class="w-full h-full text-center bg-grey-light cursor-pointer"></div>
+                </div>
+            </div>
+            <div class="mr-2">
+                <code class="text-xs text-grey-dark">.cursor-wait</code>
+                <div class="w-32 h-10 bg-grey-lighter mt-1 p-0">
+                    <div class="w-full h-full text-center bg-grey-light cursor-wait"></div>
+                </div>
+            </div>
+            <div class="mr-2">
+                <code class="text-xs text-grey-dark">.cursor-move</code>
+                <div class="w-32 h-10 bg-grey-lighter mt-1 p-0">
+                    <div class="w-full h-full text-center bg-grey-light cursor-move"></div>
+                </div>
+            </div>
+            <div class="mr-2">
+                <code class="text-xs text-grey-dark">.cursor-not-allowed</code>
+                <div class="w-32 h-10 bg-grey-lighter mt-1 p-0">
+                    <div class="w-full h-full text-center bg-grey-light cursor-not-allowed"></div>
+                </div>
+            </div>
+        </div>
+
+        <h4 id="pointer-events" class="mt-2 mb-2">
+            <a href="https://tailwindcss.com/docs/pointer-events">pointer-events</a>
+        </h4>
+        <p>
+            <a class="text-sm pointer-events-auto" href="#pointer-events">Example Link (.pointer-events-auto)</a>
+        </p>
+        <p>
+            <a class="text-sm pointer-events-none" href="#pointer-events">Example Link (.pointer-events-none)</a>
+        </p>
+
+        <h4 id="resize" class="my-4">
+            <a href="https://tailwindcss.com/docs/resize">resize</a>
+        </h4>
+
+        <pre class="text-xs text-grey-dark">
+.resize-none	resize: none;
+.resize	        resize: both;
+.resize-y	resize: vertical;
+.resize-x	resize: horizontal;
+        </pre>
+
+        <h4 id="user-select" class="my-4">
+            <a href="https://tailwindcss.com/docs/user-select">user-select</a>
+        </h4>
+
+        <div class="flex">
+            <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/3 h-10 bg-grey-lighter m-1 p-2 text-center select-text text-sm">
+                <code>.select-text</code>
+                <br/>(This text is selectable.)
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/3 h-10 bg-grey-lighter m-1 p-2 text-center select-none text-sm">
+                <code>.select-none</code>
+                <br/>(This text is not selectable.)
+            </div>
+        </div>
 
 
         <h2 id="typography" class="my-4">Typography</h2>
