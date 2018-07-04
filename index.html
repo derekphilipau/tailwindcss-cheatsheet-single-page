@@ -80,6 +80,7 @@
                 <a class="font-bold" href="#typography">Typography</a>
             </div>
             <div class="w-full rounded p-1 mb-1 bg-white">
+                <a href="#background-color">color</a>,
                 <a href="#font-size">font-size</a>,
                 <a href="#font-family">font-family</a>,
                 <a href="#font-weight">font-weight</a>,
@@ -186,6 +187,20 @@
             </div>
         </div>
 
+
+        <div class="flex text-sm">
+            <div class="flex-none py-1 pr-1 mb-1">
+                <a class="font-bold" href="#color">Miscellaneous</a>
+            </div>
+            <div class="w-full rounded p-1 mb-1 bg-white">
+                <a href="#appearance">appearance</a>,
+                <a href="#box-shadow">box-shadow</a>,
+                <a href="#opacity">opacity</a>,
+                <a href="#outline">outline</a>,
+                <a href="#svg">svg</a>
+            </div>
+        </div>
+
         <div class="flex text-sm">
             <div class="flex-none py-1 pr-1 mb-1">
                 <a class="font-bold" href="#color">Color</a>
@@ -263,7 +278,7 @@
 
 
                 <div class="w-full rounded bg-white p-3 mb-4">
-                    <h4 id="z-index" class="my-4">
+                    <h4 id="floats" class="my-4">
                         <a href="https://tailwindcss.com/docs/floats">floats</a>
                     </h4>
 
@@ -361,7 +376,7 @@
 
             <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/4">
                 <div class="w-full rounded bg-white p-3 mb-4">
-                    <h4 id="overflow" class="my-4">
+                    <h4 id="position" class="my-4">
                         <a href="https://tailwindcss.com/docs/positioning">position</a>
                     </h4>
 
@@ -790,7 +805,7 @@
                     </tbody>
                 </table>
 
-                <h4 id="font-style" class="my-4">
+                <h4 id="text-transform" class="my-4">
                     <a href="https://tailwindcss.com/docs/text-style">text-transform</a>
                 </h4>
 
@@ -3419,6 +3434,125 @@ Nunc id consequat tortor,
             </div>
         </div>
         <!-- END INTERACTIVITY -->
+
+
+        <!-- BEGIN MISCELLANEOUS -->
+        <h2 id="miscellaneous" class="my-4">Miscellaneous</h2>
+
+        <h4 id="appearance" class="mb-2">
+            <a href="https://tailwindcss.com/docs/appearance">appearance</a>
+        </h4>
+        <div class="mr-2">
+            <code class="text-xs text-grey-dark">.appearance-none</code>
+            <div class="w-32 h-10 bg-grey-lighter mt-1 p-0">
+                <div class="w-full h-full text-center bg-grey-light">
+                    Not sure how to show
+                </div>
+            </div>
+        </div>
+
+        <h4 id="box-shadow" class="my-2">
+            <a href="https://tailwindcss.com/docs/shadows">box-shadow</a>
+        </h4>
+        <div class="flex flex-wrap">
+            <div class="mr-2">
+                <div class="w-32 h-10 pt-2 text-center bg-grey-light rounded shadow">
+                    <code class="text-xs text-grey-dark">.shadow</code>
+                </div>
+            </div>
+            <div class="mr-2">
+                <div class="w-32 h-10 pt-2 text-center bg-grey-light rounded shadow-md">
+                    <code class="text-xs text-grey-dark">.shadow-md</code>
+                </div>
+            </div>
+            <div class="mr-2">
+                <div class="w-32 h-10 pt-2 text-center bg-grey-light rounded shadow-lg">
+                    <code class="text-xs text-grey-dark">.shadow-lg</code>
+                </div>
+            </div>
+            <div class="mr-2">
+                <div class="w-32 h-10 pt-2 text-center bg-grey-light rounded shadow-inner">
+                    <code class="text-xs text-grey-dark">.shadow-inner</code>
+                </div>
+            </div>
+            <div class="mr-2">
+                <div class="w-32 h-10 pt-2 text-center bg-grey-light rounded shadow-outline">
+                    <code class="text-xs text-grey-dark">.shadow-outline</code>
+                </div>
+            </div>
+            <div class="mr-2">
+                <div class="w-32 h-10 pt-2 text-center bg-grey-light rounded shadow-none">
+                    <code class="text-xs text-grey-dark">.shadow-none</code>
+                </div>
+            </div>
+        </div>
+
+        <h4 id="opacity" class="my-2">
+            <a href="https://tailwindcss.com/docs/opacity">opacity</a>
+        </h4>
+        <div class="flex flex-wrap">
+            <div class="mr-2">
+                <div class="w-32 h-10 pt-2 text-center bg-grey-light rounded opacity-100">
+                    <code class="text-xs text-grey-dark">.opacity-100</code>
+                </div>
+            </div>
+            <div class="mr-2">
+                <div class="w-32 h-10 pt-2 text-center bg-grey-light rounded opacity-75">
+                    <code class="text-xs text-grey-dark">.opacity-75</code>
+                </div>
+            </div>
+            <div class="mr-2">
+                <div class="w-32 h-10 pt-2 text-center bg-grey-light rounded opacity-50">
+                    <code class="text-xs text-grey-dark">.opacity-50</code>
+                </div>
+            </div>
+            <div class="mr-2">
+                <div class="w-32 h-10 pt-2 text-center bg-grey-light rounded opacity-25">
+                    <code class="text-xs text-grey-dark">.opacity-25</code>
+                </div>
+            </div>
+            <div class="mr-2">
+                <div class="w-32 h-10 pt-2 text-center bg-grey-light rounded opacity-0">
+                    <code class="text-xs text-grey-dark">.opacity-0</code>
+                </div>
+            </div>
+        </div>
+
+        <h4 id="outline" class="my-2">
+            <a href="https://tailwindcss.com/docs/outline">outline</a>
+        </h4>
+        <div class="flex flex-wrap">
+            <div class="mr-2">
+                <div class="w-32 h-10 pt-2 text-center bg-grey-light rounded outline-none">
+                    <code class="text-xs text-grey-dark">.outline-none</code>
+                </div>
+            </div>
+        </div>
+
+        <h4 id="svg" class="my-2">
+            <a href="https://tailwindcss.com/docs/svg">svg</a>
+        </h4>
+        <div class="flex flex-wrap">
+            <div class="mr-2">
+                <code class="text-xs text-grey-dark">.fill-current</code>
+                <br/>
+                <svg class="fill-current text-teal inline-block h-12 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M18 9.87V20H2V9.87a4.25 4.25 0 0 0 3-.38V14h10V9.5a4.26 4.26 0 0 0 3 .37zM3 0h4l-.67 6.03A3.43 3.43 0 0 1 3 9C1.34 9 .42 7.73.95 6.15L3 0zm5 0h4l.7 6.3c.17 1.5-.91 2.7-2.42 2.7h-.56A2.38 2.38 0 0 1 7.3 6.3L8 0zm5 0h4l2.05 6.15C19.58 7.73 18.65 9 17 9a3.42 3.42 0 0 1-3.33-2.97L13 0z"/>
+                </svg>
+            </div>
+            <div class="mr-2">
+                <code class="text-xs text-grey-dark">.stroke-current</code>
+                <br/>
+                <svg class="stroke-current text-purple inline-block h-12 w-12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="8" cy="21" r="2"></circle>
+                    <circle cx="20" cy="21" r="2"></circle>
+                    <path d="M5.67 6H23l-1.68 8.39a2 2 0 0 1-2 1.61H8.75a2 2 0 0 1-2-1.74L5.23 2.74A2 2 0 0 0 3.25 1H1"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- END MISCELLANEOUS -->
+
 
         <!-- BEGIN COLOR -->
         <h2 id="color" class="my-4">Color</h2>
